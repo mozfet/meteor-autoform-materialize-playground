@@ -1,16 +1,11 @@
-Session.set("doc", {
-    title: 'Miss',
-    isHuman: true,
-    checkboxes: 'Miss'
-});
+/*jshint esversion: 6 */
 
-Template.registerHelper('Schemas', () => {
-    return Schemas;
-});
+import AutoFrom from 'meteor/aldeed:autoform';
 
-Template.template.helpers({
-    doc: () => Session.get("doc")
-})
+console.log('setup autoform');
+
+AutoForm.setDefaultTemplate('materialize');
+// AutoForm.setDefaultTemplate('plain');
 
 AutoForm.addHooks(null, {
     formToDoc: (doc) => {
