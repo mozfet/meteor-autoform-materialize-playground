@@ -14,9 +14,23 @@ Template.modalExample.onCreated(() => {
 //on rendered
 Template.modalExample.onRendered(() => {
   const instance = Template.instance();
-  instance.$('.modal-trigger').leanModal({
-    complete: function () {
-      console.log('here');
-    }
-  });
+
+  //argh! workaround for package incompatability
+  if( Package['materialize:materialize']) {
+    console.log('using materialize:materialize modal');
+    instance.$('.modal-trigger').modal({
+      complete: function () {
+        console.log('here');
+      }
+    });
+  }
+  else if (Package['poetic:materialize-scss']) {
+    console.log('using poetic:materialize-scss.leanModal');
+    instance.$('.modal-trigger').leanModal({
+      complete: function () {
+        console.log('here');
+      }
+    });
+  }
+
 });

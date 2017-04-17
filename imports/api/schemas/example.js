@@ -2,6 +2,7 @@
 
 import SimpleSchema from 'simpl-schema';
 import { Tracker } from 'meteor/tracker';
+import wNumb from 'wnumb';
 
 console.log('define schema for example');
 
@@ -127,5 +128,23 @@ export default new SimpleSchema({
     type: Object
   },
   'object.firstChild': String,
-  'object.secondChild': String
+  'object.secondChild': {
+    type: Number,
+    max: 150,
+    min: 30,
+    autoform: {
+      type: "noUiSlider",
+      noUiSliderOptions: {
+        step: 20,
+        tooltips: true,
+        format: wNumb({
+      		decimals: 0
+      	})
+      },
+      noUiSlider_pipsOptions: {
+        mode: 'steps',
+        density: 10
+      }
+    }
+  },
 }, { tracker: Tracker});
