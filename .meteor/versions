@@ -16,7 +16,7 @@ caching-compiler@1.1.9
 caching-html-compiler@1.1.2
 callback-hook@1.0.10
 check@1.2.5
-coffeescript@1.0.17
+coffeescript@1.11.1_4
 crystalhelix:wnumb@1.0.1
 ddp@1.2.5
 ddp-client@1.3.4
@@ -55,10 +55,10 @@ modules-runtime@0.7.10
 momentjs:moment@2.10.6
 mongo@1.1.16
 mongo-id@1.0.6
-mozfet:autoform-materialize@1.0.0
-mozfet:autoform-materialize-nouislider@1.0.0
+mozfet:autoform-materialize@2.0.0
+mozfet:autoform-materialize-nouislider@1.0.2
 mozfet:autoform-medium@1.0.0
-mozfet:autoform-modals-materialize@1.0.0
+mozfet:autoform-modals-materialize@1.0.1
 mpowaga:string-template@0.1.0
 npm-mongo@2.2.24
 observe-sequence@1.0.16
