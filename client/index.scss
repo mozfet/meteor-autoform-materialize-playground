@@ -1,5 +1,9 @@
 @import "{poetic:materialize-scss}/sass/materialize.scss";
+@import "{mozfet:materialize-time-picker}/sass/timepicker.scss";
 
+.btn-flat:hover:after {
+  opacity:1;
+}
 // .medium-editor, .medium-editor-placeholder {
 //     outline: none;
 //     margin: 0 0 20px 0;
