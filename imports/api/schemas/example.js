@@ -124,6 +124,14 @@ export default new SimpleSchema({
       allowedValues: ['VALUE11', 'VALUE12', 'VALUE13']
   },
 
+  selectRadioInline: {
+    type: String,
+    allowedValues: ['VALUE1', 'VALUE2'],
+    autoform: {
+      type: 'select-radio-inline'
+    }
+  },
+
   date: {
     type: Date,
     label: 'Pick a date',
