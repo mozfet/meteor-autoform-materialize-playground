@@ -124,6 +124,22 @@ export default new SimpleSchema({
       allowedValues: ['VALUE11', 'VALUE12', 'VALUE13']
   },
 
+  date: {
+    type: Date,
+    label: 'Pick a date',
+    autoform: {
+      type: 'pickadate'
+    }
+  },
+
+  time: {
+    type: String,
+    label: 'Pick a time',
+    autoform: {
+      type: 'pickatime'
+    }
+  },
+
   object: {
     type: Object
   },

@@ -32,6 +32,6 @@ mozfet:autoform-materialize@2.0.4
 mozfet:autoform-modals-materialize@2.0.4
 mozfet:autoform-medium@2.0.4
 mozfet:autoform-materialize-nouislider@2.0.4
-mozfet:materialize-time-picker
+#indirect mozfet:materialize-time-picker
 
 crystalhelix:wnumb
