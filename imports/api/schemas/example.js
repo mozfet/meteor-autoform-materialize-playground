@@ -18,10 +18,20 @@ export default new SimpleSchema({
     label: 'Simple text field'
   },
 
-  simpleStringInitialised: {
+  stringInitialised: {
     type: String,
     max: 1000,
-    label: 'Simple text field with default value'
+    label: 'Simple text field with initial value',
+
+  },
+
+  stringDefault: {
+    type: String,
+    max: 1000,
+    label: 'Simple text field with initial value',
+    autoform: {
+      default: 'default text'
+    }
   },
 
   simpleTextArea: {
