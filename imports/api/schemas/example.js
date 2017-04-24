@@ -18,21 +18,27 @@ export default new SimpleSchema({
     label: 'Simple text field'
   },
 
-  simpleTextArea: {
+  simpleStringInitialised: {
     type: String,
-    label: 'Simple text area',
-    autoform: {
-      type: 'textarea'
-    }
+    max: 1000,
+    label: 'Simple text field with default value'
   },
 
-  mediumTextArea: {
-    type: String,
-    label: 'Medium Text Area',
-    autoform: {
-      type: 'medium'
-    }
-  },
+  // simpleTextArea: {
+  //   type: String,
+  //   label: 'Simple text area',
+  //   autoform: {
+  //     type: 'textarea'
+  //   }
+  // },
+
+  // mediumTextArea: {
+  //   type: String,
+  //   label: 'Medium Text Area',
+  //   autoform: {
+  //     type: 'medium'
+  //   }
+  // },
 
   select: {
     type: String,
@@ -124,6 +130,35 @@ export default new SimpleSchema({
       allowedValues: ['VALUE11', 'VALUE12', 'VALUE13']
   },
 
+  //todo: multiple select with minimum and maximum number of items to select
+  // multipleSelectMinMax: {
+  //   type: Array,
+  //   label: 'Multiple select with minimum and maximum number of items to select',
+  //   autoform: {
+  //     type: 'select-multiple',
+  //     firstOption: 'Select an option...',
+  //     minOptionsSelected: 1,
+  //     maxOptionsSelected: 2,
+  //     options: [{
+  //       label: 'Option 11',
+  //       value: 'VALUE11'
+  //     },
+  //     {
+  //       label: 'Option 12',
+  //       value: 'VALUE12'
+  //     },
+  //     {
+  //       label: 'Option 13',
+  //       value: 'VALUE13'
+  //     }
+  //   ]}
+  // },
+  // 'multipleSelectMinMax.$': {
+  //     type: String,
+  //     allowedValues: ['VALUE11', 'VALUE12', 'VALUE13']
+  // },
+
+
   selectRadioInline: {
     type: String,
     allowedValues: ['VALUE1', 'VALUE2'],
@@ -140,11 +175,48 @@ export default new SimpleSchema({
     }
   },
 
+  dateInitialised: {
+    type: Date,
+    label: 'Pick a date with initail value',
+    autoform: {
+      type: 'pickadate'
+    }
+  },
+
+  dateWithOptions: {
+    type: Date,
+    label: 'Pick a date with options',
+    autoform: {
+      type: 'pickadate',
+      pickadateOptions: {
+        closeOnSelect: true,
+        closeOnClear: true
+     }
+    }
+  },
+
   time: {
     type: String,
     label: 'Pick a time',
     autoform: {
       type: 'pickatime'
+    }
+  },
+
+  timeInitialised: {
+    type: String,
+    label: 'Pick a time with initial value',
+    autoform: {
+      type: 'pickatime'
+    }
+  },
+
+  timeWithCurrentTime: {
+    type: String,
+    label: 'Pick a time initialised to current time',
+    autoform: {
+      type: 'pickatime',
+      initToCurrentTime: true
     }
   },
 
