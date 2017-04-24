@@ -24,21 +24,21 @@ export default new SimpleSchema({
     label: 'Simple text field with default value'
   },
 
-  // simpleTextArea: {
-  //   type: String,
-  //   label: 'Simple text area',
-  //   autoform: {
-  //     type: 'textarea'
-  //   }
-  // },
+  simpleTextArea: {
+    type: String,
+    label: 'Simple text area',
+    autoform: {
+      type: 'textarea'
+    }
+  },
 
-  // mediumTextArea: {
-  //   type: String,
-  //   label: 'Medium Text Area',
-  //   autoform: {
-  //     type: 'medium'
-  //   }
-  // },
+  mediumTextArea: {
+    type: String,
+    label: 'Medium Text Area',
+    autoform: {
+      type: 'medium'
+    }
+  },
 
   select: {
     type: String,
