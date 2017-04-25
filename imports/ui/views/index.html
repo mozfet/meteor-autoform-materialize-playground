@@ -3,11 +3,16 @@
 </head>
 <body>
   <div class="container">
-    {{> insertExample}}
-    {{> modalExample}}
+    {{#DynaViewLauncher dvTemplate="insertExample"}}
+      <a href="#!" class="btn js-dynaview-launcher">Insert Example</a>
+    {{/DynaViewLauncher}}
 
-    <div id="modalContainer">
-      
-    </div>
+    {{#DynaViewLauncher dvTemplate="modalExample"}}
+      <a href="#!" class="btn js-dynaview-launcher">Insert Modal Example</a>
+    {{/DynaViewLauncher}}
+
+    {{>DynaView}}
+
+    <div id="modalContainer"></div>
   </div>
 </body>

@@ -28,8 +28,8 @@ fourseven:scss
 poetic:materialize-scss@1.97.6_1
 #materialize:materialize@0.98.2
 
-mozfet:autoform-materialize@2.0.8
-mozfet:autoform-modals-materialize@2.0.8
+mozfet:autoform-materialize@2.0.11
+mozfet:autoform-materialize-modals@0.0.2
 mozfet:autoform-medium@2.0.4
 mozfet:autoform-materialize-nouislider@2.0.4
 

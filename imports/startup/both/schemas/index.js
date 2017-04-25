@@ -9,6 +9,6 @@ Schemas = {
   example: example
 };
 
-console.log('put SimpleSchema in debug mode');
-
-SimpleSchema.debug = true;
+// console.log('put SimpleSchema in debug mode');
+//
+// SimpleSchema.debug = true;
