@@ -22,3 +22,6 @@ $ meteor
 [mozfet:meteor-autoform-nouislider](https://github.com/mozfet/meteor-autoform-nouislider)
 [mozfet:meteor-autoform-medium](https://github.com/mozfet/meteor-autoform-medium)
 [mozfet:meteor-autoform-materialize-playground](https://github.com/mozfet/meteor-autoform-materialize-playground)
+
+No longer maintained
+- [mozfet:meteor-autoform-modals-materialize](https://github.com/mozfet/meteor-autoform-modals-materialize)
