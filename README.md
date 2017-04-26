@@ -1,4 +1,4 @@
-# meteor-autoform-materialize-playground
+# Meteor Autoform Materialize Playground
 Playground and reference implementation for autoform materialize suite.
 
 # installation
@@ -10,13 +10,13 @@ $ meteor npm install
 $ meteor
 ```
 
-# useage
+# Useage #
 1. open localhost:3000 using a browser
 2. click the example you want to see
 3. play...
 4. look at the code
 
-## This package is part of a suite ##
+# This package is part of a suite #
 [mozfet:meteor-autoform-materialize](https://github.com/mozfet/meteor-autoform-materialize)
 [mozfet:meteor-autoform-materialize-modals](https://github.com/mozfet/meteor-autoform-materialize-modals)
 [mozfet:meteor-autoform-nouislider](https://github.com/mozfet/meteor-autoform-nouislider)
