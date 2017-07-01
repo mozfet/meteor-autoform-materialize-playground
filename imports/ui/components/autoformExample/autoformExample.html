@@ -1,0 +1,11 @@
+<template name="autoformExample">
+  <h2>Autoform example</h2>
+  <div class="js-timepicker-anchor"></div>
+  {{#autoForm id='autoformExample' type='method' meteormethod='submit' doc=doc schema=schema}}
+    {{> afQuickField name='text1'}}
+    {{> afQuickField name='question1'}}
+    {{> afQuickField name='select1'}}
+    <button type="submit" class="btn btn-primary">Submit</button>
+  {{/autoForm}}
+
+</template>

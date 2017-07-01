@@ -10,6 +10,7 @@
   "dependencies": {
     "babel-runtime": "^6.23.0",
     "bcrypt": "^1.0.2",
+    "faker": "^4.1.0",
     "icon-splash-resize": "^1.0.6",
     "localforage": "^1.5.0",
     "meteor-node-stubs": "^0.2.5",
