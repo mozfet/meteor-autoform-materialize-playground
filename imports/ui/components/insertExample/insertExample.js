@@ -12,9 +12,11 @@ Template.insertExample.helpers({
       id:'insertExample',
       type: 'insert',
       doc: {
-        stringInitialised: 'Initial text value',
+        stringInitialised: 'Initial text valuee',
         dateInitialised: new Date(),
-        timeInitialised: '12:34 PM'
+        timeInitialised: '12:34 PM',
+        simpleSwitchInitialised: true,
+        customSwitchInitialised: 'TRUE_VALUE'
       }
     };
   }

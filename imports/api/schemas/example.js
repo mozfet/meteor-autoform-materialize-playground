@@ -50,6 +50,31 @@ export default new SimpleSchema({
     }
   },
 
+  simpleSwitch: {
+    type: Boolean,
+    autoform: {
+      type: 'switch'
+    }
+  },
+
+  simpleSwitchInitialised: {
+    type: Boolean,
+    autoform: {
+      type: 'switch'
+    }
+  },
+
+  customSwitchInitialised: {
+    type: String,
+    autoform: {
+      type: 'switch',
+      trueLabel: 'True Label',
+      falseLabel: 'False Label',
+      trueValue: 'TRUE_VALUE',
+      falseValue: 'FALSE_VALUE'
+    }
+  },
+
   select: {
     type: String,
     allowedValues: ['VALUE1', 'VALUE2'],
@@ -140,7 +165,7 @@ export default new SimpleSchema({
       allowedValues: ['VALUE11', 'VALUE12', 'VALUE13']
   },
 
-  //todo: multiple select with minimum and maximum number of items to select
+  //TODO multiple select with minimum and maximum number of items to select
   // multipleSelectMinMax: {
   //   type: Array,
   //   label: 'Multiple select with minimum and maximum number of items to select',
