@@ -239,7 +239,7 @@ export default new SimpleSchema({
     max: 150,
     min: 30,
     autoform: {
-      type: "noUiSlider",
+      type: 'noUiSlider',
       noUiSliderOptions: {
         step: 20,
         tooltips: true,
