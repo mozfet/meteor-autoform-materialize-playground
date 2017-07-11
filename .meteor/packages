@@ -24,11 +24,11 @@ insecure@1.0.7
 aldeed:collection2-core
 aldeed:autoform
 
-fourseven:scss
-poetic:materialize-scss@1.97.6_1
-#materialize:materialize@0.98.2
+#fourseven:scss
+#mozfet:materialize-scss@1.99.0
+materialize:materialize
 
-mozfet:autoform-materialize@2.0.19
+mozfet:autoform-materialize@2.1.0
 mozfet:autoform-materialize-modals@0.0.2
 mozfet:autoform-medium@2.0.4
 mozfet:autoform-materialize-nouislider@2.0.4

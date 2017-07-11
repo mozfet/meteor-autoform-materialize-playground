@@ -14,7 +14,7 @@ Template.insertExample.helpers({
       doc: {
         stringInitialised: 'Initial text valuee',
         dateInitialised: new Date(),
-        timeInitialised: '12:34 PM',
+        timeInitialised: '12:34PM',
         simpleSwitchInitialised: true,
         customSwitchInitialised: 'TRUE_VALUE'
       }
