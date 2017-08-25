@@ -31,7 +31,7 @@ materialize:materialize@=0.99.0
 
 zodiase:material-design-icons-fonts
 
-mozfet:autoform-materialize@2.1.1git
+mozfet:autoform-materialize@2.1.1
 mozfet:autoform-materialize-modals@0.0.2
 mozfet:autoform-medium@2.0.4
 mozfet:autoform-materialize-nouislider@2.0.4
