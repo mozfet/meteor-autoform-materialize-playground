@@ -25,9 +25,9 @@ insecure@1.0.7
 aldeed:collection2-core
 aldeed:autoform
 
-#fourseven:scss
+fourseven:scss
 #poetic:materialize-scss
-materialize:materialize@=0.99.0
+#materialize:materialize@=0.99.0
 
 zodiase:material-design-icons-fonts
 

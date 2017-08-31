@@ -3,3 +3,4 @@
 import './materialize.js';
 import './autoform.js';
 import '../../ui/views';
+import './materialize.css';
