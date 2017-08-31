@@ -20,3 +20,12 @@ AutoForm.addHooks(null, {
         alert('all good baby !');
     }
 });
+
+AutoForm.hooks({
+  contactForm: {
+    onSubmit: function (insertDoc, updateDoc, currentDoc) {
+      this.done();      
+      return false;
+    }
+  }
+});

@@ -4,17 +4,28 @@
 <body>
   <div class="container">
 
-    {{#DynaViewLauncher dvTemplate="insertExample"}}
-      <a href="#!" class="btn js-dynaview-launcher">Insert Example</a>
-    {{/DynaViewLauncher}}
-
-    {{#DynaViewLauncher dvTemplate="autoformExample"}}
-      <a href="#!" class="btn js-dynaview-launcher">Autoform Example</a>
-    {{/DynaViewLauncher}}
-
-    {{#DynaViewLauncher dvTemplate="modalExample"}}
-      <a href="#!" class="btn js-dynaview-launcher">Insert Modal Example</a>
-    {{/DynaViewLauncher}}
+    <div class="row">
+      <div class="col l3 m4 s6">
+        {{#DynaViewLauncher dvTemplate="insertExample"}}
+          <a href="#!" class="btn js-dynaview-launcher">Insert</a>
+        {{/DynaViewLauncher}}
+      </div>
+      <div class="col l3 m4 s6">
+        {{#DynaViewLauncher dvTemplate="autoformExample"}}
+          <a href="#!" class="btn js-dynaview-launcher">Autoform</a>
+        {{/DynaViewLauncher}}
+      </div>
+      <div class="col l3 m4 s6">
+        {{#DynaViewLauncher dvTemplate="modalExample"}}
+          <a href="#!" class="btn js-dynaview-launcher">Modal</a>
+        {{/DynaViewLauncher}}
+      </div>
+      <div class="col l3 m4 s6">
+        {{#DynaViewLauncher dvTemplate="validationExample"}}
+          <a href="#!" class="btn js-dynaview-launcher">Validation</a>
+        {{/DynaViewLauncher}}
+      </div>
+    </div>
 
     {{>DynaView}}
 

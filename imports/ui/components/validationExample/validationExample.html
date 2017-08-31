@@ -1,0 +1,12 @@
+<template name="validationExample">
+  <h1>Validation Example</h1>
+  <!-- {{>quickForm id="validationExample" type="normal" schema=schema doc=doc}} -->
+  {{#autoForm id="validationExample" type="normal" schema=schema doc=doc}}
+    {{> afQuickField name="requirementMandatory" }}
+    {{> afQuickField name="everythingGoes" }}
+    {{> afQuickField name="maximumLengthThree" }}
+    {{> afQuickField name="minimumLengthThree" }}
+    {{> afQuickField name="regexAlphaOnly" }}
+    <button class="btn btn-primary" type="submit">Submit</button>
+  {{/autoForm}}
+</template>
