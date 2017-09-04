@@ -31,8 +31,8 @@ fourseven:scss
 
 zodiase:material-design-icons-fonts
 
-mozfet:autoform-materialize@2.1.1
-mozfet:autoform-materialize-modals@0.0.2
+mozfet:autoform-materialize@3.0.0
+mozfet:autoform-materialize-modals@1.0.0
 mozfet:autoform-medium@2.0.4
 mozfet:autoform-materialize-nouislider@2.0.4
 crystalhelix:wnumb

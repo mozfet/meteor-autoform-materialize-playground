@@ -1,6 +1,5 @@
 /*jshint esversion: 6 */
 
-import './materialize.js';
-import './autoform.js';
+import './materialize';
+import './autoform';
 import '../../ui/views';
-import './materialize.css';
