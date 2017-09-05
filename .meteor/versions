@@ -56,8 +56,8 @@ modules-runtime@0.8.0
 momentjs:moment@2.10.6
 mongo@1.1.22
 mongo-id@1.0.6
-mozfet:autoform-materialize@3.0.0
-mozfet:autoform-materialize-modals@1.0.0
+mozfet:autoform-materialize@3.0.2
+mozfet:autoform-materialize-modals@1.0.2
 mozfet:autoform-materialize-nouislider@2.0.4
 mozfet:autoform-medium@2.0.4
 mozfet:materialize-icons@0.0.3

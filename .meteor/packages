@@ -25,14 +25,12 @@ insecure@1.0.7
 aldeed:collection2-core
 aldeed:autoform
 
-fourseven:scss
-#poetic:materialize-scss
-#materialize:materialize@=0.99.0
-
+fourseven:scss@4.5.4
+#materialize:materialize@=0.100.0
 zodiase:material-design-icons-fonts
 
-mozfet:autoform-materialize@3.0.0
-mozfet:autoform-materialize-modals@1.0.0
+mozfet:autoform-materialize@3.0.1
+mozfet:autoform-materialize-modals@1.0.2
 mozfet:autoform-medium@2.0.4
 mozfet:autoform-materialize-nouislider@2.0.4
 crystalhelix:wnumb
