@@ -4,8 +4,6 @@ import SimpleSchema from 'simpl-schema';
 import { Tracker } from 'meteor/tracker';
 import wNumb from 'wnumb';
 
-console.log('define schema for example');
-
 SimpleSchema.extendOptions(['autoform']);
 
 export default new SimpleSchema({

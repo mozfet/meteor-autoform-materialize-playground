@@ -2,11 +2,10 @@
 
 import 'meteor/mongo';
 import exampleSchema from '../../../api/schemas/example.js';
-
-console.log('create Examples collection');
+import modalSchema from '../../../api/schemas/modalExample.js';
 
 Examples = new Mongo.Collection('Examples');
-
-console.log('attach example schema and tracker to Example collection');
-
 Examples.attachSchema(exampleSchema);
+
+Modals = new Mongo.Collection('Modals');
+Modals.attachSchema(modalSchema);

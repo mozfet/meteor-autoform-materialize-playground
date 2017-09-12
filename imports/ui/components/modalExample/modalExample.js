@@ -20,16 +20,11 @@ Template.modalExample.onRendered(() => {
 Template.modalExample.helpers({
   data() {
     return {
-      collection: 'Examples',
-      id:'insertExample',
+      collection: 'Modals',
+      id:'modalExample',
       type: 'insert',
       modalParentId: 'modalContainer',
-      title: 'Add Example',
-      doc: {
-        stringInitialised: 'Initial text value',
-        dateInitialised: new Date(),
-        timeInitialised: '12:34 PM'
-      }
+      title: 'Modal Insert Example'
     };
   }
 });
