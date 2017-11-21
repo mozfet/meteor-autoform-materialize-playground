@@ -2,6 +2,7 @@
 
 //imports
 import { Template } from 'meteor/templating';
+import { EJSON } from 'meteor/ejson';
 import './modalExample.html';
 
 console.log('load modal example ui component');
@@ -26,5 +27,11 @@ Template.modalExample.helpers({
       modalParentId: 'modalContainer',
       title: 'Modal Insert Example'
     };
+  },
+  docs() {
+    return Modals.find({});
+  },
+  docJson(doc) {
+    return EJSON.stringify(doc, {indent: true, canonical: false});
   }
 });

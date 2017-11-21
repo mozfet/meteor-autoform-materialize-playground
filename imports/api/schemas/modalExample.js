@@ -14,10 +14,11 @@ export default new SimpleSchema({
 
   maximumLengthThree: {
     type: String,
-    optional: true
+    optional: true,
+    max: 3
   },
 
-  simpleSwitchInitialised: {
+  simpleSwitch: {
     type: Boolean,
     autoform: {
       type: 'switch'
@@ -27,7 +28,7 @@ export default new SimpleSchema({
   selectWithSpecifiedValues: {
     type: String,
     allowedValues: ['VALUE5', 'VALUE6'],
-    optional: true,
+    optional: false,
     autoform: {
       type: 'select',
       options: [

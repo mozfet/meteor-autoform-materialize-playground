@@ -1,6 +1,12 @@
 <template name="modalExample">
   <h2>Insert example using modal</h2>
   {{#autoformMaterializeModalLauncher data}}
-    <a class="btn js-autofrom-materialize-modal-trigger">click to launch</a>
+    <a class="btn js-autofrom-materialize-modal-trigger">Launch Modal</a>
   {{/autoformMaterializeModalLauncher}}
+  
+  <!-- show docs -->
+  {{#each doc in docs}}
+    <p>{{docJson doc}}</p>
+  {{/each}}
+
 </template>
