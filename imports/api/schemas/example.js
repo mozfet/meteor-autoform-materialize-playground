@@ -19,16 +19,24 @@ export default new SimpleSchema({
   stringInitialised: {
     type: String,
     max: 1000,
-    label: 'Simple text field with initial value',
-
+    label: 'Simple text field initialised with data'
   },
 
   stringDefault: {
     type: String,
     max: 1000,
-    label: 'Simple text field with initial value',
+    label: 'Simple text field with default value',
     autoform: {
       default: 'default text'
+    }
+  },
+
+  stringPlaceholder: {
+    type: String,
+    max: 1000,
+    label: 'Simple text field with placeholder',
+    autoform: {
+      placeholder: 'Placeholder'
     }
   },
 

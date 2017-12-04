@@ -9,12 +9,12 @@ AutoForm.setDefaultTemplate('materialize');
 
 AutoForm.addHooks(null, {
     formToDoc: (doc) => {
-        return doc;
+      return doc;
     },
     onError: (operation, error) => {
-        if (error) {
-            console.log(error);
-        }
+      if (error) {
+          console.log(error);
+      }
     },
     onSuccess: () => {
         alert('all good baby !');
@@ -24,7 +24,14 @@ AutoForm.addHooks(null, {
 AutoForm.hooks({
   contactForm: {
     onSubmit: function (insertDoc, updateDoc, currentDoc) {
-      this.done();      
+      this.done();
+      return false;
+    }
+  },
+  autoCompleteExample: {
+    onSubmit: function (insertDoc, updateDoc, currentDoc) {
+      console.log('insertDoc:', insertDoc);
+      this.done();
       return false;
     }
   }
