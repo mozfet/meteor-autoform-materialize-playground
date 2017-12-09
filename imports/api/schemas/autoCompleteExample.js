@@ -7,142 +7,207 @@ SimpleSchema.extendOptions(['autoform']);
 
 export default new SimpleSchema({
 
-  autoCompleteBasic: {
+  autoCompleteSingular: {
     type: String,
     optional: true,
-    label: 'Auto Complete Basic',
-    allowedValues:  ['Alpha', 'Animal', 'Brave', 'Butter'],
+    label: 'Auto Complete Singular',
+    allowedValues:  ['Alpha', 'Animal', 'Brave', 'Butter', 'Better', 'Charlie'],
     autoform: {
       type: 'autocomplete',
     }
   },
 
-  autoCompleteInitialized: {
-    type: String,
-    optional: true,
-    label: 'Auto Complete with Initialized Value',
-    allowedValues:  ['Alpha', 'Animal', 'Brave', 'Butter'],
-    autoform: {
-      type: 'autocomplete'
-    }
-  },
+  // autoCompleteSingularInitialized: {
+  //   type: String,
+  //   optional: true,
+  //   label: 'Auto Complete Singular with Initialized Value',
+  //   allowedValues:  ['Alpha', 'Alphabet', 'Animal', 'Brave', 'Butter'],
+  //   autoform: {
+  //     type: 'autocomplete'
+  //   }
+  // },
 
-  autoCompleteDefault: {
-    type: String,
-    optional: true,
-    label: 'Auto Complete with Default Value',
-    allowedValues:  ['Alpha', 'Animal', 'Brave', 'Butter'],
-    autoform: {
-      type: 'autocomplete',
-      default: 'Alpha'
-    }
-  },
-
-  autoCompletePlaceholder: {
-    type: String,
-    optional: true,
-    label: 'Auto Complete with Placeholder',
-    allowedValues: ['Alpha', 'Animal', 'Brave', 'Butter'],
-    autoform: {
-      type: 'autocomplete',
-      placeholder: 'Placeholder'
-    }
-  },
-
-  autoCompleteDisplayLimit: {
-    type: String,
-    optional: true,
-    label: 'Auto Complete With Display Limit of 3',
-    allowedValues: ['Alpha', 'Animal', 'Always', 'Anytime'],
-    autoform: {
-      type: 'autocomplete',
-      autoComplete: {
-        displayLimit: 3
-      }
-    }
-  },
-
-  autoCompleteLabeledValues: {
-    type: String,
-    optional: true,
-    label: 'Auto Complete With Labeled Values',
-    allowedValues: ['Alpha', 'Animal', 'Always', 'Anytime'],
-    autoform: {
-      type: 'autocomplete',
-      options: [
-        {
-          label: 'Alpha',
-          value: 'ALPHA'
-        },
-        {
-          label: 'Animal',
-          value: 'ANIMAL'
-        },
-        {
-          label: 'Always',
-          value: 'ALWAYS'
-        },
-        {
-          label: 'Anytime',
-          value: 'ANYTIME'
-        }
-      ]
-    }
-  },
-
-  autoCompleteComputedLabeledValues: {
-    type: String,
-    optional: true,
-    label: 'Auto Complete With Computed Labeled Values',
-    allowedValues: ['Alpha', 'Animal', 'Always', 'Anytime'],
-    autoform: {
-      type: 'autocomplete',
-      options: () => {
-        return [
-          {
-            label: 'Alpha',
-            value: 'ALPHA'
-          },
-          {
-            label: 'Animal',
-            value: 'ANIMAL'
-          },
-          {
-            label: 'Always',
-            value: 'ALWAYS'
-          },
-          {
-            label: 'Anytime',
-            value: 'ANYTIME'
-          }
-        ];
-      }
-    }
-  },
-
+  // autoCompleteDefault: {
+  //   type: String,
+  //   optional: true,
+  //   label: 'Auto Complete with Default Value',
+  //   allowedValues:  ['Alpha', 'Animal', 'Brave', 'Butter'],
+  //   autoform: {
+  //     type: 'autocomplete',
+  //     default: 'Alpha'
+  //   }
+  // },
+  //
+  // autoCompletePlaceholder: {
+  //   type: String,
+  //   optional: true,
+  //   label: 'Auto Complete with Placeholder',
+  //   allowedValues: ['Alpha', 'Animal', 'Brave', 'Butter'],
+  //   autoform: {
+  //     type: 'autocomplete',
+  //     placeholder: 'Placeholder'
+  //   }
+  // },
+  //
+  // autoCompleteDisplayLimit: {
+  //   type: String,
+  //   optional: true,
+  //   label: 'Auto Complete With Display Limit of 3',
+  //   allowedValues: ['Alpha', 'Animal', 'Always', 'Anytime'],
+  //   autoform: {
+  //     type: 'autocomplete',
+  //     autoComplete: {
+  //       displayLimit: 3
+  //     }
+  //   }
+  // },
+  //
+  // autoCompleteLabeledValues: {
+  //   type: String,
+  //   optional: true,
+  //   label: 'Auto Complete With Labeled Values',
+  //   allowedValues: ['ALPHA', 'ANIMAL', 'ALWAYS', 'ANYTIME'],
+  //   autoform: {
+  //     type: 'autocomplete',
+  //     options: [
+  //       {
+  //         label: 'Alpha',
+  //         value: 'ALPHA'
+  //       },
+  //       {
+  //         label: 'Animal',
+  //         value: 'ANIMAL'
+  //       },
+  //       {
+  //         label: 'Always',
+  //         value: 'ALWAYS'
+  //       },
+  //       {
+  //         label: 'Anytime',
+  //         value: 'ANYTIME'
+  //       }
+  //     ]
+  //   }
+  // },
+  //
+  // autoCompleteComputedLabeledValues: {
+  //   type: String,
+  //   optional: true,
+  //   label: 'Auto Complete With Computed Labeled Values',
+  //   allowedValues: ['ALPHA', 'ANIMAL', 'ALWAYS', 'ANYTIME'],
+  //   autoform: {
+  //     type: 'autocomplete',
+  //     options: () => {
+  //       return [
+  //         {
+  //           label: 'Alpha',
+  //           value: 'ALPHA'
+  //         },
+  //         {
+  //           label: 'Animal',
+  //           value: 'ANIMAL'
+  //         },
+  //         {
+  //           label: 'Always',
+  //           value: 'ALWAYS'
+  //         },
+  //         {
+  //           label: 'Anytime',
+  //           value: 'ANYTIME'
+  //         }
+  //       ];
+  //     }
+  //   }
+  // },
+  //
   // autoCompleteMultiple: {
   //   type: Array,
-  //   label: 'Multiple select',
+  //   label: 'Auto Complete Multiple',
   //   autoform: {
-  //     type: 'select-multiple',
-  //     firstOption: 'Select an option...',
-  //     options: [{
-  //       label: 'Option 11',
-  //       value: 'VALUE11'
+  //     type: 'autocomplete',
+  //     options: () => {
+  //       return [
+  //         {
+  //           label: 'Alpha',
+  //           value: 'ALPHA'
+  //         },
+  //         {
+  //           label: 'Animal',
+  //           value: 'ANIMAL'
+  //         },
+  //         {
+  //           label: 'Always',
+  //           value: 'ALWAYS'
+  //         },
+  //         {
+  //           label: 'Anytime',
+  //           value: 'ANYTIME'
+  //         },
+  //         {
+  //           label: 'Bravo',
+  //           value: 'BRAVO'
+  //         },
+  //         {
+  //           label: 'Bedtime',
+  //           value: 'BEDTIME'
+  //         }
+  //       ];
   //     },
-  //     {
-  //       label: 'Option 12',
-  //       value: 'VALUE12'
-  //     },
-  //     {
-  //       label: 'Option 13',
-  //       value: 'VALUE13'
+  //     autoComplete: {
+  //       displayLimit: 3,
+  //       multiple: true,
+  //       minSize: 1, // for some unknown reason simple schema min is not propaged to auto complete input, thus we define it here
+  //       maxSize: 3  // for some unknown reason simple schema max is not propaged to auto complete input, thus we define it here
   //     }
-  //   ]}
+  //   }
   // },
-  // 'multipleSelect.$': {
+  // 'autoCompleteMultiple.$': {
   //     type: String,
-  //     allowedValues: ['VALUE11', 'VALUE12', 'VALUE13']
-  // }
+  //     allowedValues: ['ALPHA', 'ANIMAL', 'ALWAYS', 'ANYTIME', 'BRAVO', 'BEDTIME']
+  // },
 
+  // autoCompleteMultipleInitialized: {
+  //   type: Array,
+  //   label: 'Auto Complete Multiple Initialized',
+  //   autoform: {
+  //     type: 'autocomplete',
+  //     options: () => {
+  //       return [
+  //         {
+  //           label: 'Alpha',
+  //           value: 'ALPHA'
+  //         },
+  //         {
+  //           label: 'Animal',
+  //           value: 'ANIMAL'
+  //         },
+  //         {
+  //           label: 'Always',
+  //           value: 'ALWAYS'
+  //         },
+  //         {
+  //           label: 'Anytime',
+  //           value: 'ANYTIME'
+  //         },
+  //         {
+  //           label: 'Bravo',
+  //           value: 'BRAVO'
+  //         },
+  //         {
+  //           label: 'Bedtime',
+  //           value: 'BEDTIME'
+  //         }
+  //       ];
+  //     },
+  //     autoComplete: {
+  //       displayLimit: 3,
+  //       multiple: true,
+  //       minSize: 1, // for some unknown reason simple schema min is not propaged to auto complete input, thus we define it here
+  //       maxSize: 3  // for some unknown reason simple schema max is not propaged to auto complete input, thus we define it here
+  //     }
+  //   }
+  // },
+  // 'autoCompleteMultipleInitialized.$': {
+  //     type: String
+  // }
 }, { tracker: Tracker});

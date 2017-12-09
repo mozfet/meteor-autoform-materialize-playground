@@ -1,31 +1,15 @@
-@import "../node_modules/materialize-css/sass/materialize.scss";
-@import "../node_modules/materialize-autocomplete-meteor-autoform/style.scss";
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(fonts/Roboto-Regular.woff2), format('woff2');
+}
 
-// .autocomplete {
-//     display: -ms-flexbox;
-//     display: flex;
-// }
-// .autocomplete .ac-users {
-//     padding-top: 10px;
-// }
-// .autocomplete .ac-users .chip {
-//     -ms-flex: auto;
-//     flex: auto;
-//     margin-bottom: 10px;
-//     margin-right: 10px;
-// }
-// .autocomplete .ac-users .chip:last-child {
-//     margin-right: 5px;
-// }
-// .autocomplete .ac-dropdown .ac-hover {
-//     background: #eee;
-// }
-// .autocomplete .ac-input {
-//     -ms-flex: 1;
-//     flex: 1;
-//     min-width: 150px;
-//     padding-top: 0.6rem;
-// }
-// .autocomplete .ac-input input {
-//     height: 2.4rem;
-// }
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
+@import "../node_modules/materialize-css/sass/materialize.scss";
+// @import "../node_modules/materialize-autocomplete-meteor-autoform/style.scss";
+
+@import "{mozfet:autoform-materialize}/style.scss";

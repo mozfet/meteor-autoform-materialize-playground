@@ -1,9 +1,13 @@
 # Meteor AutoForm Materialize Playground
 Playground and reference implementation for AutoForm Materialize suite.
 
-Version 3.2.0 of this app was manual smoke tested and seemed to work ok on 4 Dec
-2017 with Meteor 1.6, Simple Schema 0.5, Materialize CSS 0.100.2, Materialize
-Autocomplete 1.0.7, Autoform 6.2.0, and Autoform Materialize Modals 1.1.2.
+Version 3.3.0 of this app was manual smoke tested and seemed to work ok on 6 December 2017 using:
++ Latest stable version of Chrome on latest stable version iOS
++ Meteor 1.6
++ Simple Schema 0.5
++ Materialize CSS 0.100.2
++ Autoform 6.2.0
++ Autoform Materialize Modals 1.1.2
 
 ## Installation ##
 in your projects directory

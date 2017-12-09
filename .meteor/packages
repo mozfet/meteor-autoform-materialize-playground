@@ -26,10 +26,9 @@ aldeed:collection2-core
 aldeed:autoform
 
 fourseven:scss@4.5.4
-#materialize:materialize@=0.100.0
 zodiase:material-design-icons-fonts
 
-mozfet:autoform-materialize@3.1.0
+mozfet:autoform-materialize@3.3.0
 mozfet:autoform-materialize-modals@1.1.0
 mozfet:autoform-medium@2.0.4
 mozfet:autoform-materialize-nouislider@2.0.4

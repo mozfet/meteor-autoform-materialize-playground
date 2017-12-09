@@ -10,7 +10,8 @@ console.log('load insert example ui component');
 Template.autoCompleteExample.onCreated(() => {
   const instance = Template.instance();
   instance.doc = {
-    autoCompleteInitialized: 'Alpha'
+    autoCompleteSingularInitialized: 'Alpha',
+    autoCompleteMultipleInitialized: ['Alpha']
   };
 });
 
