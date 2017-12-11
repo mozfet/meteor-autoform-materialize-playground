@@ -56,6 +56,16 @@ export default new SimpleSchema({
     }
   },
 
+  numberDefault: {
+    type: Number,
+    min: 1,
+    max: 10,
+    label: 'Simple number field with a value between 1 and 10',
+    autoform: {
+      default: 5
+    }
+  },
+
   simpleSwitch: {
     type: Boolean,
     autoform: {
