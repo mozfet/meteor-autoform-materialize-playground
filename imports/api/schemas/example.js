@@ -89,6 +89,15 @@ export default new SimpleSchema({
     }
   },
 
+  selectWithDefault: {
+    type: String,
+    allowedValues: ['VALUE1', 'VALUE2'],
+    autoform: {
+      type: 'select',
+      default: 'VALUE1'
+    }
+  },
+
   selectWithSpecifiedValues: {
     type: String,
     allowedValues: ['VALUE5', 'VALUE6'],
