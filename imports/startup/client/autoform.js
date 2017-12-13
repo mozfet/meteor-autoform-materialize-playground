@@ -1,10 +1,10 @@
 /*jshint esversion: 6 */
-
+import { EJSON } from 'meteor/ejson'
 import AutoFrom from 'meteor/aldeed:autoform';
 
 console.log('setup autoform');
 
-AutoForm.debug();
+// AutoForm.debug();
 
 AutoForm.setDefaultTemplate('materialize');
 // AutoForm.setDefaultTemplate('plain');
@@ -15,26 +15,18 @@ AutoForm.addHooks(null, {
     },
     onError: (operation, error) => {
       if (error) {
-          console.log(error);
+        console.warn(error);
       }
     },
-    onSuccess: () => {
-        alert('all good baby !');
-    }
-});
-
-AutoForm.hooks({
-  contactForm: {
     onSubmit: function (insertDoc, updateDoc, currentDoc) {
-      this.done();
+      this.done(null, insertDoc);
       return false;
+    },
+    onSuccess: (formType, result) => {
+      console.log('onSuccess.formType:', formType);
+      console.log('onSuccess.result:', result);
+      const json = EJSON.stringify(result, {indent: true, canonical: true});
+      console.log('onSuccess.json:', json);
+      alert('Success with '+formType+' form:\n'+json);
     }
-  },
-  autoCompleteExample: {
-    onSubmit: function (insertDoc, updateDoc, currentDoc) {
-      console.log('insertDoc:', insertDoc);
-      this.done();
-      return false;
-    }
-  }
 });

@@ -11,7 +11,7 @@ Template.autoCompleteExample.onCreated(() => {
   const instance = Template.instance();
   instance.doc = {
     autoCompleteSingularInitialized: 'Alpha',
-    autoCompleteMultipleInitialized: ['Alpha']
+    autoCompleteMultipleInitialized: ['ALPHA']    
   };
 });
 

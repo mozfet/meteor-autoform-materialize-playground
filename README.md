@@ -1,7 +1,7 @@
 # Meteor AutoForm Materialize Playground
 Playground and reference implementation for AutoForm Materialize suite.
 
-Version 3.3.0 of this app was manual smoke tested and seemed to work ok on 6 December 2017 using:
+Version 3.4.0 of this app was manual smoke tested and seemed to work ok on 6 December 2017 using:
 + Latest stable version of Chrome on latest stable version iOS
 + Meteor 1.6
 + Simple Schema 0.5

@@ -90,6 +90,35 @@ export default new SimpleSchema({
     }
   },
 
+  autoCompleteLabeledValuesDefault: {
+    type: String,
+    optional: true,
+    label: 'Auto Complete Singular With Labeled Values and a Default',
+    allowedValues: ['ALPHA', 'ANIMAL', 'ALWAYS', 'ANYTIME'],
+    autoform: {
+      type: 'autocomplete',
+      default: 'ALPHA',
+      options: [
+        {
+          label: 'Alpha',
+          value: 'ALPHA'
+        },
+        {
+          label: 'Animal',
+          value: 'ANIMAL'
+        },
+        {
+          label: 'Always',
+          value: 'ALWAYS'
+        },
+        {
+          label: 'Anytime',
+          value: 'ANYTIME'
+        }
+      ]
+    }
+  },
+
   autoCompleteComputedLabeledValues: {
     type: String,
     optional: true,
@@ -208,6 +237,52 @@ export default new SimpleSchema({
     }
   },
   'autoCompleteMultipleInitialized.$': {
+      type: String
+  },
+
+  autoCompleteMultipleDefault: {
+    type: Array,
+    label: 'Auto Complete Multiple Initialized',
+    autoform: {
+      type: 'autocomplete',
+      options: () => {
+        return [
+          {
+            label: 'Alpha',
+            value: 'ALPHA'
+          },
+          {
+            label: 'Animal',
+            value: 'ANIMAL'
+          },
+          {
+            label: 'Always',
+            value: 'ALWAYS'
+          },
+          {
+            label: 'Anytime',
+            value: 'ANYTIME'
+          },
+          {
+            label: 'Bravo',
+            value: 'BRAVO'
+          },
+          {
+            label: 'Bedtime',
+            value: 'BEDTIME'
+          }
+        ];
+      },
+      default: ['ALPHA', 'BRAVO'],
+      autoComplete: {
+        displayLimit: 3,
+        multiple: true,
+        minSize: 1, // for some unknown reason simple schema min is not propaged to auto complete input, thus we define it here
+        maxSize: 3  // for some unknown reason simple schema max is not propaged to auto complete input, thus we define it here
+      }
+    }
+  },
+  'autoCompleteMultipleDefault.$': {
       type: String
   }
 }, { tracker: Tracker});
