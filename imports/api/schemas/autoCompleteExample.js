@@ -56,9 +56,7 @@ export default new SimpleSchema({
     allowedValues: ['Alpha', 'Animal', 'Always', 'Anytime', 'Anywhere'],
     autoform: {
       type: 'autocomplete',
-      autoComplete: {
-        displayLimit: 3
-      }
+      displayLimit: 3
     }
   },
 
@@ -149,9 +147,11 @@ export default new SimpleSchema({
     }
   },
 
-  autoCompleteMultiple: {
+  autoCompleteMultipleMinMax: {
     type: Array,
-    label: 'Auto Complete Multiple with min size of 1 and max size of 3',
+    label: 'Auto Complete Multiple with count between 1 and 3',
+    minCount: 1,
+    maxCount: 3,
     autoform: {
       type: 'autocomplete',
       options: () => {
@@ -182,15 +182,11 @@ export default new SimpleSchema({
           }
         ];
       },
-      autoComplete: {
-        displayLimit: 3,
-        multiple: true,
-        minSize: 1, // for some unknown reason simple schema min is not propaged to auto complete input, thus we define it here
-        maxSize: 3  // for some unknown reason simple schema max is not propaged to auto complete input, thus we define it here
-      }
+      displayLimit: 3,
+      multiple: true
     }
   },
-  'autoCompleteMultiple.$': {
+  'autoCompleteMultipleMinMax.$': {
       type: String,
       allowedValues: ['ALPHA', 'ANIMAL', 'ALWAYS', 'ANYTIME', 'BRAVO', 'BEDTIME']
   },
@@ -228,12 +224,7 @@ export default new SimpleSchema({
           }
         ];
       },
-      autoComplete: {
-        displayLimit: 3,
-        multiple: true,
-        minSize: 1, // for some unknown reason simple schema min is not propaged to auto complete input, thus we define it here
-        maxSize: 3  // for some unknown reason simple schema max is not propaged to auto complete input, thus we define it here
-      }
+      multiple: true
     }
   },
   'autoCompleteMultipleInitialized.$': {
@@ -245,6 +236,7 @@ export default new SimpleSchema({
     label: 'Auto Complete Multiple Initialized',
     autoform: {
       type: 'autocomplete',
+      multiple: true,
       options: () => {
         return [
           {
@@ -273,16 +265,12 @@ export default new SimpleSchema({
           }
         ];
       },
-      default: ['ALPHA', 'BRAVO'],
-      autoComplete: {
-        displayLimit: 3,
-        multiple: true,
-        minSize: 1, // for some unknown reason simple schema min is not propaged to auto complete input, thus we define it here
-        maxSize: 3  // for some unknown reason simple schema max is not propaged to auto complete input, thus we define it here
-      }
+      default: ['ALPHA', 'BRAVO']
     }
   },
   'autoCompleteMultipleDefault.$': {
       type: String
   }
+
+
 }, { tracker: Tracker});

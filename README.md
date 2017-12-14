@@ -1,13 +1,23 @@
 # Meteor AutoForm Materialize Playground
 Playground and reference implementation for AutoForm Materialize suite.
 
-Version 3.4.0 of this app was manual smoke tested and seemed to work ok on 6 December 2017 using:
-+ Latest stable version of Chrome on latest stable version iOS
+## This package is part of a suite ##
+[mozfet:meteor-autoform-materialize](https://github.com/mozfet/meteor-autoform-materialize)
+[mozfet:meteor-autoform-materialize-modals](https://github.com/mozfet/meteor-autoform-materialize-modals)
+[mozfet:meteor-autoform-nouislider](https://github.com/mozfet/meteor-autoform-nouislider)
+[mozfet:meteor-autoform-medium](https://github.com/mozfet/meteor-autoform-medium)
+[mozfet:meteor-autoform-materialize-playground](https://github.com/mozfet/meteor-autoform-materialize-playground)
+
+## Dependancies ##
+Version 3.5.0 of this app was manual smoke tested and seemed to work ok on 14 December 2017 using:
++ Chrome Version 62.0.3202.94 (Official Build) (64-bit)
 + Meteor 1.6
 + Simple Schema 0.5
 + Materialize CSS 0.100.2
 + Autoform 6.2.0
++ Autoform Materialize 3.5.0
 + Autoform Materialize Modals 1.1.2
++ FourSeven SCSS 4.5.4
 
 ## Installation ##
 in your projects directory
@@ -24,12 +34,7 @@ $ meteor
 3. play with the examples
 4. look at the code
 
-## This package is part of a suite ##
-[mozfet:meteor-autoform-materialize](https://github.com/mozfet/meteor-autoform-materialize)
-[mozfet:meteor-autoform-materialize-modals](https://github.com/mozfet/meteor-autoform-materialize-modals)
-[mozfet:meteor-autoform-nouislider](https://github.com/mozfet/meteor-autoform-nouislider)
-[mozfet:meteor-autoform-medium](https://github.com/mozfet/meteor-autoform-medium)
-[mozfet:meteor-autoform-materialize-playground](https://github.com/mozfet/meteor-autoform-materialize-playground)
+
 
 ## Todo ##
  - Upgrade to noUiSlider 10.0.0. This is needed to remove non critical warning on client console:
