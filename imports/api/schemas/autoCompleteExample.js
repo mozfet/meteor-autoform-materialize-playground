@@ -150,7 +150,7 @@ export default new SimpleSchema({
   autoCompleteMultipleMinMax: {
     type: Array,
     label: 'Auto Complete Multiple with count between 1 and 3',
-    minCount: 1,
+    minCount: 2,
     maxCount: 3,
     autoform: {
       type: 'autocomplete',

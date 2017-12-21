@@ -1,6 +1,8 @@
 # Meteor AutoForm Materialize Playground
 Playground and reference implementation for AutoForm Materialize suite.
 
+> **Thank You** This suite of packages is maintained by [ExpertBox.com](http://www.ExpertBox.com) as a thank you to the Open Source community.
+
 ## This package is part of a suite ##
 [mozfet:meteor-autoform-materialize](https://github.com/mozfet/meteor-autoform-materialize)
 [mozfet:meteor-autoform-materialize-modals](https://github.com/mozfet/meteor-autoform-materialize-modals)

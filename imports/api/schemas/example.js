@@ -168,6 +168,8 @@ export default new SimpleSchema({
   multipleSelect: {
     type: Array,
     label: 'Multiple select',
+    minCount: 1,
+    maxCount: 2,
     autoform: {
       type: 'select-multiple',
       firstOption: 'Select an option...',
@@ -190,34 +192,59 @@ export default new SimpleSchema({
       allowedValues: ['VALUE11', 'VALUE12', 'VALUE13']
   },
 
-  //TODO multiple select with minimum and maximum number of items to select
-  // multipleSelectMinMax: {
-  //   type: Array,
-  //   label: 'Multiple select with minimum and maximum number of items to select',
-  //   autoform: {
-  //     type: 'select-multiple',
-  //     firstOption: 'Select an option...',
-  //     minOptionsSelected: 1,
-  //     maxOptionsSelected: 2,
-  //     options: [{
-  //       label: 'Option 11',
-  //       value: 'VALUE11'
-  //     },
-  //     {
-  //       label: 'Option 12',
-  //       value: 'VALUE12'
-  //     },
-  //     {
-  //       label: 'Option 13',
-  //       value: 'VALUE13'
-  //     }
-  //   ]}
-  // },
-  // 'multipleSelectMinMax.$': {
-  //     type: String,
-  //     allowedValues: ['VALUE11', 'VALUE12', 'VALUE13']
-  // },
+  multipleSelectPlaceholder: {
+    type: Array,
+    label: 'Multiple select with placeholder',
+    minCount: 1,
+    maxCount: 2,
+    autoform: {
+      type: 'select-multiple',
+      placeholder: 'Select an option',
+      options: [{
+        label: 'Option 11',
+        value: 'VALUE11'
+      },
+      {
+        label: 'Option 12',
+        value: 'VALUE12'
+      },
+      {
+        label: 'Option 13',
+        value: 'VALUE13'
+      }
+    ]}
+  },
+  'multipleSelectPlaceholder.$': {
+      type: String,
+      allowedValues: ['VALUE11', 'VALUE12', 'VALUE13']
+  },
 
+  multipleSelectMinMax: {
+    type: Array,
+    label: 'Multiple select with count between 1 and 2',
+    minCount: 1,
+    maxCount: 2,
+    autoform: {
+      type: 'select-multiple',
+      firstOption: 'Select an option...',
+      options: [{
+        label: 'Option 11',
+        value: 'VALUE11'
+      },
+      {
+        label: 'Option 12',
+        value: 'VALUE12'
+      },
+      {
+        label: 'Option 13',
+        value: 'VALUE13'
+      }
+    ]}
+  },
+  'multipleSelectMinMax.$': {
+      type: String,
+      allowedValues: ['VALUE11', 'VALUE12', 'VALUE13']
+  },
 
   selectRadioInline: {
     type: String,
@@ -311,6 +338,32 @@ export default new SimpleSchema({
         density: 10
       }
     }
+  },
+  'object.thirdChild': {
+    type: Array,
+    label: 'Third Child',
+    minCount: 1,
+    maxCount: 2,
+    autoform: {
+      type: 'select-multiple',
+      firstOption: 'Select an option...',
+      options: [{
+        label: 'Option 20',
+        value: 'VALUE20'
+      },
+      {
+        label: 'Option 21',
+        value: 'VALUE21'
+      },
+      {
+        label: 'Option 22',
+        value: 'VALUE22'
+      }
+    ]}
+  },
+  'object.thirdChild.$': {
+      type: String,
+      allowedValues: ['VALUE20', 'VALUE21', 'VALUE22']
   },
 
   arrayOfStrings: {
