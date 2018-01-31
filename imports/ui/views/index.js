@@ -1,9 +1,10 @@
 /*jshint esversion: 6 */
 import { Template } from 'meteor/templating';
-import '../components/insertExample/insertExample.js';
-import '../components/autoformExample/autoformExample.js';
-import '../components/modalExample/modalExample.js';
-import '../components/validationExample/validationExample.js';
-import '../components/autoCompleteExample/autoCompleteExample.js';
+import '../components/insertExample/insertExample';
+import '../components/autoformExample/autoformExample';
+import '../components/modalExample/modalExample';
+import '../components/validationExample/validationExample';
+import '../components/autoCompleteExample/autoCompleteExample';
+import '../components/arraysExample/arraysExample';
+import '../components/DynaView';
 import './index.html';
-import '../components/DynaView/index.js';

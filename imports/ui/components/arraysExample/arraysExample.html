@@ -1,0 +1,32 @@
+<template name="arraysExample">
+  <!-- <h1>Insert</h1>
+  {{> quickForm insertData}} -->
+
+  <!-- show docs -->
+  <ul class="collection with-header">
+    <li class="collection-header">
+      <h4>Database Collection</h4>
+    </li>
+    {{#each doc in docs}}
+      {{> arrayCollectionItem doc=doc updateDocument=updateDocument}}
+    {{/each}}
+  </ul>
+
+  {{#if showUpdateDocument}}
+    <h1>Update</h1>
+    {{> quickForm updateFormData}}
+  {{/if}}
+</template>
+
+<template name="arrayCollectionItem">
+  <li class="collection-item">
+    {{docJson doc}}
+    <a href="#!" class="secondary-content">
+      {{#autoformMaterializeModalLauncher updateFormData}}
+        <i class="material-icons js-update js-autofrom-materialize-modal-trigger">edit</i>
+      {{/autoformMaterializeModalLauncher}}
+      <!-- <i class="material-icons js-update">edit</i> -->
+      <i class="material-icons js-delete">delete</i>
+    </a>
+  </li>
+</template>

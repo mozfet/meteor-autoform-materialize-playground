@@ -22,6 +22,18 @@ AutoForm.addHooks(null, {
       this.done(null, insertDoc);
       return false;
     },
+    //see https://github.com/aldeed/meteor-autoform/issues/840
+    before: {
+      update: function(doc) {
+        _.each(doc.$set, function(value, setter) {
+          if (_.isArray(value)) {
+            const newValue = _.compact(value);
+            doc.$set[setter] = newValue;
+          }
+        });
+        return doc;
+      }
+    },
     onSuccess: (formType, result) => {
       console.log('onSuccess.formType:', formType);
       console.log('onSuccess.result:', result);
