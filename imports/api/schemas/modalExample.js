@@ -43,4 +43,24 @@ export default new SimpleSchema({
       ]
     }
   },
+
+  fileUpload: {
+    type: String,
+    autoform: {
+      afFieldInput: {
+        type: 'fileUpload',
+        collection: 'Files',
+        // uploadTemplate: 'uploadField',
+        // previewTemplate: 'uploadPreview',
+        // insertConfig: {
+        //   meta: {},
+        //   isBase64: false,
+        //   transport: 'ddp',
+        //   streams: 'dynamic',
+        //   chunkSize: 'dynamic',
+        //   allowWebWorkers: true
+        // }
+      }
+    }
+  }
 }, { tracker: Tracker});

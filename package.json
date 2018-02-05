@@ -2,7 +2,7 @@
   "name": "Meteor-Autoform-Materialize-Playground",
   "description": "Test project to demonstrate mozfet:autoform-materialize and mozfet:autoform-modals-materialize",
   "private": false,
-  "version": "3.5.2",
+  "version": "3.5.3",
   "scripts": {
     "start": "meteor run",
     "img": "node node_modules/icon-splash-resize/index.js"

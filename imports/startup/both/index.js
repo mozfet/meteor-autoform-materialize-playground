@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-
+import './simple-schema';
 import './collections';
 
 Meteor.methods({
