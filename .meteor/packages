@@ -28,10 +28,11 @@ aldeed:autoform
 fourseven:scss@4.5.4
 zodiase:material-design-icons-fonts
 
+ostrio:files
+
 mozfet:autoform-materialize@3.5.0
 mozfet:autoform-materialize-modals@1.1.0
 mozfet:autoform-medium@2.0.4
 mozfet:autoform-materialize-nouislider@2.0.4
+mozfet:autoform-materialize-files@2.0.6
 crystalhelix:wnumb
-mozfet:autoform-files
-ostrio:files
