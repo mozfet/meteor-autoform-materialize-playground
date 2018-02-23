@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-import { EJSON } from 'meteor/ejson'
+import { EJSON } from 'meteor/ejson';
 import AutoFrom from 'meteor/aldeed:autoform';
 
 console.log('setup autoform');

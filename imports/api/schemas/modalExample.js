@@ -15,7 +15,10 @@ export default new SimpleSchema({
   maximumLengthThree: {
     type: String,
     optional: true,
-    max: 3
+    max: 3,
+    autoform: {
+      default: 'abc'
+    }
   },
 
   simpleSwitch: {
@@ -25,42 +28,32 @@ export default new SimpleSchema({
     }
   },
 
-  selectWithSpecifiedValues: {
-    type: String,
-    allowedValues: ['VALUE5', 'VALUE6'],
-    optional: false,
+  optionalDatePicker: {
+    type: Date,
+    optional: true,
     autoform: {
-      type: 'select',
-      options: [
-        {
-          label: 'option 5',
-          value: 'VALUE5'
-        },
-        {
-          label: 'option 6',
-          value: 'VALUE6'
-        }
-      ]
+      type: 'pickadate',
+      pickadateOptions: {
+      }
     }
+  },
+
+  optionalDate: {
+    type: Date,
+    optional: true
+  },
+
+  optionalDate: {
+    type: Date,
+    optional: true
   },
 
   fileUpload: {
     type: String,
+    optional: true,
     autoform: {
-      afFieldInput: {
-        type: 'fileUpload',
-        collection: 'Files',
-        // uploadTemplate: 'uploadField',
-        // previewTemplate: 'uploadPreview',
-        // insertConfig: {
-        //   meta: {},
-        //   isBase64: false,
-        //   transport: 'ddp',
-        //   streams: 'dynamic',
-        //   chunkSize: 'dynamic',
-        //   allowWebWorkers: true
-        // }
-      }
+      type: 'fileUpload',
+      collection: 'Files'
     }
   }
 }, { tracker: Tracker});
