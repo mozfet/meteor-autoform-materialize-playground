@@ -1,7 +1,7 @@
 <template name="validationExample">
   <h1>Validation Example</h1>
-  <!-- {{>quickForm id="validationExample" type="normal" schema=schema doc=doc}} -->
-  {{#autoForm
+  {{>quickForm id="validationExample" type="normal" schema=schema doc=doc}}
+  <!-- {{#autoForm
       id="validationExample" type="method" meteormethod="submit" doc=doc
       schema=schema validation="submitThenKeyup"}}
     {{> afQuickField name="requirementMandatory" }}
@@ -9,6 +9,9 @@
     {{> afQuickField name="maximumLengthThree" }}
     {{> afQuickField name="minimumLengthThree" }}
     {{> afQuickField name="regexAlphaOnly" }}
+    {{> afQuickField name="selectWithoutDefault" firstOption="(Select Something)" options=options}}
+    {{> afQuickField name="selectWithoutDefaultWithPlacehorder" }}
+    {{> afQuickField name="selectWithDefault" }}
     <button class="btn btn-primary" type="submit">Submit</button>
-  {{/autoForm}}
+  {{/autoForm}} -->
 </template>

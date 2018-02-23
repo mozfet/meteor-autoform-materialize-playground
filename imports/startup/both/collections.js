@@ -9,10 +9,10 @@ import { FilesCollection } from 'meteor/ostrio:files';
 
 const observationHandler = {
   added: (doc) => {
-    console.log('Added:', doc);
+    // console.log('Added:', doc);
   },
   changed: (doc) => {
-    console.log('Changed', doc);
+    // console.log('Changed', doc);
   }
 };
 
