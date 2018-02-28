@@ -14,18 +14,21 @@ export default new SimpleSchema({
     label: 'A string field'
   },
 
-  // arrayOfObjects: {
-  //   type: Array
-  // },
-  // 'arrayOfObjects.$': {
-  //   type: Object,
-  //   label: 'Object'
-  // },
-  // 'arrayOfObjects.$.firstChild': {
-  //   type: String
-  // },
-  // 'arrayOfObjects.$.secondChild': {
-  //   type: String
-  // }
+  arrayOfObjects: {
+    type: Array
+  },
+  'arrayOfObjects.$': {
+    type: Object,
+    label: 'Children'
+  },
+  'arrayOfObjects.$.child1': {
+    type: String
+  },
+  'arrayOfObjects.$.child2': {
+    type: Object
+  },
+  'arrayOfObjects.$.child2.grandChild': {
+    type: String
+  }
 
 }, { tracker: Tracker});

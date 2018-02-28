@@ -23,11 +23,11 @@ Template.arraysExample.helpers({
     const instance = Template.instance();
     return {
       collection: 'Arrays',
-      id: 'arraysInsertExample'+instance.formId,
+      id: 'arraysInsertExample',
       type: 'insert',
-      doc: {
-        // arrayOfStrings: ['one', 'two', 'three'],
-      }
+      // doc: {
+      //   arrayOfStrings: ['one', 'two', 'three'],
+      // }
     };
   },
   updateFormData() {
@@ -36,7 +36,7 @@ Template.arraysExample.helpers({
     let doc = Arrays.findOne(instance.updateDocument.get()._id);
     const result = {
       collection: 'Arrays',
-      id:'arraysUpdateExample'+instance.formId,
+      id:'arraysUpdateExample',
       type: 'update',
       doc: doc,
       modalParentId: 'modalContainer',
