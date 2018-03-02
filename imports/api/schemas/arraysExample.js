@@ -7,19 +7,27 @@ import wNumb from 'wnumb';
 export default new SimpleSchema({
 
   arrayOfStrings: {
-    type: Array
+    type: Array,
+    minCount: 1,
+    maxCount: 3,
+    optional: true  // but, but, with a min or max count it aint optional?
   },
   'arrayOfStrings.$': {
     type: String,
-    label: 'A string field'
+    label: 'A string field with placeholder',
+    autoform: {
+     placeholder: 'Placeholder'
+    }
   },
 
   arrayOfObjects: {
-    type: Array
+    type: Array,
+    optional: true
   },
   'arrayOfObjects.$': {
     type: Object,
-    label: 'Children'
+    label: 'Children',
+    optional: false
   },
   'arrayOfObjects.$.child1': {
     type: String
