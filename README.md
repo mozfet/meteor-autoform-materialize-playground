@@ -14,12 +14,13 @@ Playground and reference implementation for AutoForm Materialize suite.
 
 ## Dependancies
 
-Version 3.6.1 of this example app was manual smoke tested using:
+Version 3.6.2 of this example app was manual smoke tested using:
 + Chrome Version 62.0.3202.94 (Official Build) (64-bit)
 + Meteor 1.6.0.1
 + Simple Schema 0.5 (NPM Package)
 + Materialize CSS 0.100.2 (NPM Package)
 + Autoform 6.2.0 (Atmosphere Package)
++ Autoform Materialize 3.6.3 (Atmosphere Package)
 + Autoform Materialize Modals 1.1.5 (Atmosphere Package)
 + Autoform Materialize File 2.0.5 (Atmosphere Package)
 + FourSeven SCSS 4.5.4 (Atmosphere Package)
