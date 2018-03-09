@@ -8,86 +8,6 @@ SimpleSchema.extendOptions(['autoform']);
 
 export default new SimpleSchema({
 
-  // @TODO move to text example
-
-  // requirementMandatory: String,
-  //
-  // everythingGoes: {
-  //   type: String,
-  //   optional: true
-  // },
-  //
-  // maximumLengthThree: {
-  //   type: String,
-  //   max: 3,
-  //   optional: true
-  // },
-  //
-  // minimumLengthThree: {
-  //   type: String,
-  //   min: 3
-  // },
-  //
-  // regexAlphaOnly: {
-  //   type: String,
-  //   regEx: /^[a-zA-Z]+$/i,
-  //   optional: true
-  // },
-
-
-
-
-  // optionalSelectWithoutDefault: {
-  //   type: String,
-  //   optional: true,
-  //   allowedValues: ['SOME', 'THING'],
-  //   autoform: {
-  //     type: 'select'
-  //   }
-  // },
-  //
-  // optionalSelectWithoutDefaultWithPlacehorder: {
-  //   type: String,
-  //   optional: true,
-  //   allowedValues: ['OUT', 'THERE'],
-  //   autoform: {
-  //     type: 'select',
-  //     placeholder: '(Holding a place...)'
-  //   }
-  // },
-  //
-  // optionalSelectWithoutDefaultWithFirstOption: {
-  //   type: String,
-  //   optional: true,
-  //   allowedValues: ['OUT', 'THERE'],
-  //   autoform: {
-  //     type: 'select',
-  //     firstOption: '(The first option should be disabled...)'
-  //   }
-  // },
-  //
-  // selectWithDefaultWithPlaceholder: {
-  //   type: String,
-  //   allowedValues: ['VALUE1', 'VALUE2', 'VALUE3'],
-  //   optional: true,
-  //   autoform: {
-  //     type: 'select',
-  //     defaultValue: 'VALUE2',
-  //     placeholder: 'Choose one and only one'
-  //   }
-  // },
-  //
-  // selectWithDefaultWithFirstOption: {
-  //   type: String,
-  //   allowedValues: ['VALUE1', 'VALUE2', 'VALUE3'],
-  //   optional: true,
-  //   autoform: {
-  //     type: 'select',
-  //     defaultValue: 'VALUE2',
-  //     firstOption: 'Choose one and only one'
-  //   }
-  // },
-
   multipleSelectWithFirstOption: {
     type: Array,
     autoform: {
@@ -98,6 +18,21 @@ export default new SimpleSchema({
     }
   },
   'multipleSelectWithFirstOption.$': {
+    type: String,
+    allowedValues: ['VALUE4', 'VALUE5', 'VALUE6', 'VALUE7']
+  },
+
+  multipleSelectWithFirstOptionWithLabel: {
+    type: Array,
+    label: 'I have my own label',
+    autoform: {
+      type: 'select-multiple',
+      // first option is needed by autoform to avoid the first option auto
+      // selected if there are no default
+      firstOption: 'Choose some'
+    }
+  },
+  'multipleSelectWithFirstOptionWithLabel.$': {
     type: String,
     allowedValues: ['VALUE4', 'VALUE5', 'VALUE6', 'VALUE7']
   },
@@ -184,18 +119,106 @@ export default new SimpleSchema({
   },
 
   multipleSelectWithDefaultWithPlaceholder: {
-    type: String,
-    allowedValues: ['VALUE4', 'VALUE5', 'VALUE6', 'VALUE7'],
+    type: Array,
     minCount: 1,
     maxCount: 2,
     autoform: {
       type: 'select-multiple',
       defaultValue: ['VALUE5', 'VALUE6'],
-      placeholder: 'Choose one or two'
+      placeholder: 'Choose one or two',
     }
   },
   'multipleSelectWithDefaultWithPlaceholder.$': {
     type: String,
     allowedValues: ['VALUE4', 'VALUE5', 'VALUE6', 'VALUE7']
+  },
+
+  multipleSelectWithDefaultWithFirstOptionWithOptionsArray: {
+    type: Array,
+    autoform: {
+      type: 'select-multiple',
+      defaultValue: ['VALUE5', 'VALUE6'],
+      options: [{
+        label: 'Option 4',
+        value: 'VALUE4'
+      },
+      {
+        label: 'Option 5',
+        value: 'VALUE5'
+      },
+      {
+        label: 'Option 6',
+        value: 'VALUE6'
+      },
+      {
+        label: 'Option 7',
+        value: 'VALUE7'
+      }],
+      firstOption: 'Choose a few'
+    }
+  },
+  'multipleSelectWithDefaultWithFirstOptionWithOptionsArray.$': {
+    type: String
+  },
+
+  multipleSelectWithDefaultWithFirstOptionWithOptionsArrayWithAllowedValues: {
+    type: Array,
+    autoform: {
+      type: 'select-multiple',
+      defaultValue: ['VALUE5', 'VALUE6'],
+      options: [{
+        label: 'Option 4',
+        value: 'VALUE4'
+      },
+      {
+        label: 'Option 5',
+        value: 'VALUE5'
+      },
+      {
+        label: 'Option 6',
+        value: 'VALUE6'
+      },
+      {
+        label: 'Option 7',
+        value: 'VALUE7'
+      }],
+      firstOption: 'Choose a few'
+    }
+  },
+  'multipleSelectWithDefaultWithFirstOptionWithOptionsArrayWithAllowedValues.$': {
+    type: String,
+    allowedValues: ['VALUE4', 'VALUE5', 'VALUE6', 'VALUE7']
+  },
+
+  multipleSelectWithDefaultWithFirstOptionWithOptionsFunction: {
+    type: Array,
+    autoform: {
+      type: 'select-multiple',
+      defaultValue: ['VALUE5', 'VALUE6'],
+      firstOption: 'Choose a few',
+      options() {
+        return [
+          {
+            label: 'Option 4',
+            value: 'VALUE4'
+          },
+          {
+            label: 'Option 5',
+            value: 'VALUE5'
+          },
+          {
+            label: 'Option 6',
+            value: 'VALUE6'
+          },
+          {
+            label: 'Option 7',
+            value: 'VALUE7'
+          }
+        ];
+      }
+    }
+  },
+  'multipleSelectWithDefaultWithFirstOptionWithOptionsFunction.$': {
+    type: String
   },
 }, { tracker: Tracker});
