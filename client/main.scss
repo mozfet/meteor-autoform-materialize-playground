@@ -11,3 +11,7 @@ html, body {
 
 @import "../node_modules/materialize-css/sass/materialize.scss";
 @import "{mozfet:autoform-materialize}/style.scss";
+
+.js-dynaview-launcher {
+  margin-top: 5px;
+}

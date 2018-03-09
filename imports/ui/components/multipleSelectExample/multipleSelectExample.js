@@ -2,27 +2,27 @@
 
 //imports
 import { Template } from 'meteor/templating';
-import schema from '../../../api/schemas/validationExample';
-import './validationExample.html';
+import schema from '../../../api/schemas/multipleSelectExample';
+import './multipleSelectExample.html';
 
 //on created
-Template.validationExample.onCreated(() => {
+Template.multipleSelectExample.onCreated(() => {
   const instance = Template.instance();
 });
 
 //on rendered
-Template.validationExample.onRendered(() => {
+Template.multipleSelectExample.onRendered(() => {
   const instance = Template.instance();
 });
 
 //helpers
-Template.validationExample.helpers({
+Template.multipleSelectExample.helpers({
   schema: schema,
-  doc:{}
+  doc: {}
 });
 
 //events
-Template.validationExample.events({
+Template.multipleSelectExample.events({
 
   //on click class
   'click .className'(event, instance) {
@@ -30,6 +30,6 @@ Template.validationExample.events({
 });
 
 //on destroyed
-Template.validationExample.onDestroyed(() => {
+Template.multipleSelectExample.onDestroyed(() => {
   const instance = Template.instance();
 });

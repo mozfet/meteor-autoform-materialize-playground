@@ -153,7 +153,7 @@ export default new SimpleSchema({
     allowedValues: ['VALUE9', 'VALUE10'],
     autoform: {
       type: 'select',
-      firstOption: 'Select an option...',
+      firstOption: '(Select an option...)',
       options: [{
         label: 'Option 9',
         value: 'VALUE9'
@@ -172,7 +172,7 @@ export default new SimpleSchema({
     maxCount: 2,
     autoform: {
       type: 'select-multiple',
-      firstOption: 'Select an option...',
+      firstOption: '(Select one of many options...)',
       options: [{
         label: 'Option 11',
         value: 'VALUE11'
