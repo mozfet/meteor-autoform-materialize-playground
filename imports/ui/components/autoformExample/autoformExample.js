@@ -15,6 +15,7 @@ Template.autoformExample.helpers({
     }
     return {
       text1: text1,
+      text2: text1,
       select1: 'VALUE1',
       question1: 'answer1'
     };
@@ -45,6 +46,14 @@ Template.autoformExample.helpers({
         type: String,
         autoform: {
           type: 'flowtext'
+        }
+      },
+
+      text2: {
+        type: String,
+        autoform: {
+          type: 'flowtext',
+          paragraphClass: ''
         }
       },
 
