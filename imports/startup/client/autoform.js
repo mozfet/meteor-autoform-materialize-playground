@@ -4,7 +4,7 @@ import AutoFrom from 'meteor/aldeed:autoform';
 
 console.log('setup autoform');
 
-// AutoForm.debug();
+AutoForm.debug();
 
 AutoForm.setDefaultTemplate('materialize');
 // AutoForm.setDefaultTemplate('plain');

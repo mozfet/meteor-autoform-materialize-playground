@@ -3,57 +3,56 @@
 import SimpleSchema from 'simpl-schema';
 import { Tracker } from 'meteor/tracker';
 
-SimpleSchema.extendOptions(['autoform']);
-
 export default new SimpleSchema({
-
-  everythingGoes: {
-    type: String,
-    optional: true
-  },
-
-  maximumLengthThree: {
+  text1: {
     type: String,
     optional: true,
-    max: 3,
-    autoform: {
-      default: 'abc'
-    }
   },
-
-  simpleSwitch: {
-    type: Boolean,
-    autoform: {
-      type: 'switch'
-    }
-  },
-
-  optionalDatePicker: {
-    type: Date,
+  time: {
+    type: String,
+    label: 'Pick a time',
     optional: true,
     autoform: {
-      type: 'pickadate',
-      pickadateOptions: {
+      type: 'pickatime'
+    }
+  },
+  select1: {
+    type: String,
+    autoform: {
+      type: 'select',
+      options() {
+        return [
+          {
+            label: 'Option 1',
+            value: 'VALUE1'
+          },
+          {
+            label: 'Option 2',
+            value: 'VALUE2'
+          }
+        ];
       }
     }
   },
-
-  optionalDate: {
-    type: Date,
-    optional: true
-  },
-
-  optionalDate: {
-    type: Date,
-    optional: true
-  },
-
-  fileUpload: {
-    type: String,
-    optional: true,
+  select2: {
+    type: Array,
     autoform: {
-      type: 'fileUpload',
-      collection: 'Files'
+      type: 'select-multiple',
+      options: () => {
+        return [
+          {
+            label: 'Option 1',
+            value: 'VALUE1'
+          },
+          {
+            label: 'Option 2',
+            value: 'VALUE2'
+          }
+        ];
+      }
     }
+  },
+  'select2.$': {
+    type: String
   }
 }, { tracker: Tracker});

@@ -1,12 +1,23 @@
 <template name="modalExample">
   <h2>Insert example using modal</h2>
   {{#autoformMaterializeModalLauncher data}}
-    <a class="btn js-autofrom-materialize-modal-trigger">Launch Modal</a>
+    <a class="btn js-autofrom-materialize-modal-trigger">Launch QuickFrom Modal</a>
   {{/autoformMaterializeModalLauncher}}
-  
+
+  {{#autoformMaterializeModalLauncher data2}}
+    <a class="btn js-autofrom-materialize-modal-trigger">Launch AutoForm Modal</a>
+  {{/autoformMaterializeModalLauncher}}
+
   <!-- show docs -->
   {{#each doc in docs}}
     <p>{{docJson doc}}</p>
   {{/each}}
 
+</template>
+
+<template name="customForm">
+  {{> afQuickField name="text1"}}
+  {{> afQuickField name="time"}}
+  {{> afQuickField name="select1"}}
+  {{> afQuickField name="select2"}}
 </template>

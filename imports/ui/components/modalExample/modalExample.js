@@ -22,10 +22,22 @@ Template.modalExample.helpers({
   data() {
     return {
       collection: 'Modals',
-      id:'modalExample',
+      id:'modalExampleQuickForm',
       type: 'insert',
       modalParentId: 'modalContainer',
       title: 'Modal Insert Example'
+    };
+  },
+  data2() {
+    return {
+      collection: 'Modals',
+      id:'modalExampleAutoForm',
+      type: 'insert',
+      modalParentId: 'modalContainer',
+      title: 'Modal Insert Example',
+      customForm: {
+        template: 'customForm'
+      }
     };
   },
   docs() {

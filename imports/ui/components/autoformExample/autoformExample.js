@@ -3,7 +3,9 @@
 import './autoformExample.html';
 import '../DynaView';
 import SimpleSchema from 'simpl-schema';
+SimpleSchema.extendOptions(['autoform']); // idk why this is needed here, it is done at startup!
 import Faker from 'faker';
+
 
 console.log('load insert example ui component');
 
@@ -40,6 +42,28 @@ Template.autoformExample.helpers({
             ];
           }
         }
+      },
+
+      select2: {
+        type: Array,
+        autoform: {
+          type: 'select-multiple',
+          options: () => {
+            return [
+              {
+                label: 'Option 1',
+                value: 'VALUE1'
+              },
+              {
+                label: 'Option 2',
+                value: 'VALUE2'
+              }
+            ];
+          }
+        }
+      },
+      'select2.$': {
+        type: String
       },
 
       text1: {
