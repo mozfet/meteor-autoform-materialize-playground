@@ -66,7 +66,7 @@ export default new SimpleSchema({
   selectWithDefaultWithFirstOption: {
     type: String,
     allowedValues: ['Something', 'Another Thing'],
-    optional: true,
+    optional: false,
     autoform: {
       type: 'select',
       defaultValue: 'Another thing',
@@ -77,7 +77,7 @@ export default new SimpleSchema({
   selectWithDefaultWithPlaceholder: {
     type: String,
     allowedValues: ['Something', 'Another Thing'],
-    optional: true,
+    optional: false,
     autoform: {
       type: 'select',
       defaultValue: 'Another Thing',

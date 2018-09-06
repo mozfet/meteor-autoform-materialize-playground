@@ -18,6 +18,7 @@ AutoForm.addHooks(null, {
         console.warn(error);
       }
     },
+    // Called when form does not have a `type` attribute
     onSubmit: function (insertDoc, updateDoc, currentDoc) {
       this.done(null, insertDoc);
       return false;
@@ -34,11 +35,19 @@ AutoForm.addHooks(null, {
         return doc;
       }
     },
+    // Called when any submit operation succeeds
     onSuccess: (formType, result) => {
       console.log('onSuccess.formType:', formType);
-      console.log('onSuccess.result:', result);
-      const json = EJSON.stringify(result, {indent: true, canonical: true});
-      console.log('onSuccess.json:', json);
-      alert('Success with '+formType+' form:\n'+json);
+      if (formType === 'method') {
+        alert('Success with '+formType+' form. Check server log to see that method was called.');  
+      }
+      else {
+        console.log('onSuccess.result:', result);
+        const json = EJSON.stringify(result, {indent: true, canonical: true});
+        console.log('onSuccess.json:', json);
+        alert('Success with '+formType+' form:\n'+json);
+      }
+
+
     }
 });
