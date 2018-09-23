@@ -56,7 +56,7 @@ export default new SimpleSchema({
       type: 'select-multiple',
       // first option is needed by autoform to avoid the first option auto
       // selected if there are no default
-      firstOption: 'Choose some'
+      placeholder: 'Choose some'
     }
   },
   'multipleSelectWithPlaceholder.$': {

@@ -14,16 +14,24 @@ Playground and reference implementation for AutoForm Materialize suite.
 
 ## Dependancies
 
-Version 3.6.2 of this example app was manual smoke tested using:
-+ Chrome Version 62.0.3202.94 (Official Build) (64-bit)
-+ Meteor 1.6.0.1
+Version 4.0.3 of this package was manual smoke tested in Playground 4.0.2 and seemed to work ok, with some minor issues, using:
++ OSX High Sierra 10.13.6
++ Chrome Version 62.0.3497.81 (Official Build) (64-bit)
++ Meteor 1.7.0.5
 + Simple Schema 0.5 (NPM Package)
-+ Materialize CSS 0.100.2 (NPM Package)
-+ Autoform 6.2.0 (Atmosphere Package)
-+ Autoform Materialize 3.6.3 (Atmosphere Package)
-+ Autoform Materialize Modals 1.1.5 (Atmosphere Package)
-+ Autoform Materialize File 2.0.5 (Atmosphere Package)
-+ FourSeven SCSS 4.5.4 (Atmosphere Package)
++ Materialize CSS 1.0.0-rc2 (NPM Package)
++ Hammerjs 2.0.8 (NPM Package)
++ Aldeed Autoform 6.3.0 (Atmosphere Package)
++ Aldeed Collection2 2.1.2 (Atmosphere Package)
++ Mozfet Autoform Materialize Modals 1.1.5 (Atmosphere Package)
++ Mozfet Autoform Materialize Files 2.1.0 (Atmosphere Package)
++ Mozfet Autoform Medium 2.0.4 (Atmosphere Package)
++ Mozfet Material Icons 1.0.1 (Atmosphere Package)
++ Ostrio Files 1.10.2 (Atmosphere Package)
++ FourSeven SCSS 4.9.0 (Atmosphere Package)
++ NoUiSlider 0.5.0 (NPM Package)
++ Wnumb 1.1.0 (GIT Repo)
++ Material Design Icons Fonts 3.0.1 (Atmosphere)
 
 ## Installation ##
 

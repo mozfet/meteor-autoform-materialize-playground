@@ -1,7 +1,5 @@
-/*jshint esversion: 6 */
-
-import SimpleSchema from 'simpl-schema';
-import { Tracker } from 'meteor/tracker';
+import SimpleSchema from 'simpl-schema'
+import { Tracker } from 'meteor/tracker'
 
 export default new SimpleSchema({
   text1: {
@@ -14,6 +12,17 @@ export default new SimpleSchema({
     optional: true,
     autoform: {
       type: 'pickatime'
+    }
+  },
+  date: {
+    type: Date,
+    optional: true,
+    label: 'Pick a date',
+    autoform: {
+      type: 'pickadate',
+      pickadateOptions: {
+        container: '#modalContainer'
+      }
     }
   },
   select1: {

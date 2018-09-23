@@ -5,6 +5,7 @@ import exampleSchema from '/imports/api/schemas/example'
 import textSchema from '/imports/api/schemas/textExample'
 import modalSchema from '/imports/api/schemas/modalExample'
 import arraysSchema from '/imports/api/schemas/arraysExample'
+import dateTimeSchema from '/imports/api/schemas/dateTimePickerExample'
 import { FilesCollection } from 'meteor/ostrio:files'
 
 const observationHandler = {
@@ -31,6 +32,9 @@ Arrays.find({}).observe(observationHandler)
 Texts = new Mongo.Collection('Texts')
 Texts.attachSchema(textSchema)
 Texts.find({}).observe(observationHandler)
+
+DateTimes = new Mongo.Collection('DateTimes')
+DateTimes.attachSchema(dateTimeSchema)
 
 Files = new FilesCollection({
   collectionName: 'Files',

@@ -1,5 +1,3 @@
-/*jshint esversion: 6 */
-
 import SimpleSchema from 'simpl-schema';
 import { Tracker } from 'meteor/tracker';
 import wNumb from 'wnumb';
@@ -7,32 +5,6 @@ import wNumb from 'wnumb';
 SimpleSchema.extendOptions(['autoform']);
 
 export default new SimpleSchema({
-
-  // @TODO move to text example
-
-  // requirementMandatory: String,
-  //
-  // everythingGoes: {
-  //   type: String,
-  //   optional: true
-  // },
-  //
-  // maximumLengthThree: {
-  //   type: String,
-  //   max: 3,
-  //   optional: true
-  // },
-  //
-  // minimumLengthThree: {
-  //   type: String,
-  //   min: 3
-  // },
-  //
-  // regexAlphaOnly: {
-  //   type: String,
-  //   regEx: /^[a-zA-Z]+$/i,
-  //   optional: true
-  // },
 
   optionalSelectWithoutDefault: {
     type: String,
@@ -43,6 +15,14 @@ export default new SimpleSchema({
     }
   },
 
+  requiredSelectWithoutDefault: {
+    type: String,
+    allowedValues: ['Something', 'Another Thing'],
+    autoform: {
+      type: 'select'
+    }
+  },
+  
   optionalSelectWithoutDefaultWithPlacehorder: {
     type: String,
     optional: true,
@@ -66,10 +46,9 @@ export default new SimpleSchema({
   selectWithDefaultWithFirstOption: {
     type: String,
     allowedValues: ['Something', 'Another Thing'],
-    optional: false,
     autoform: {
       type: 'select',
-      defaultValue: 'Another thing',
+      defaultValue: 'Another Thing',
       firstOption: 'Choose one and only one'
     }
   },
@@ -77,7 +56,6 @@ export default new SimpleSchema({
   selectWithDefaultWithPlaceholder: {
     type: String,
     allowedValues: ['Something', 'Another Thing'],
-    optional: false,
     autoform: {
       type: 'select',
       defaultValue: 'Another Thing',

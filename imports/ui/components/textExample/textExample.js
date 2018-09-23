@@ -15,7 +15,8 @@ Template.textExample.onRendered(() => {
 // helpers
 Template.textExample.helpers({
   doc: {
-    textInitialised: 'This is an initialized value'
+    textInitialised: 'This is an initialized value',
+    textAreaInitialized: 'This should be wrapping.\nThe Quick Brown Fox Jumps Over The Lazy Dog. The Quick Brown Fox Jumps Over The Lazy Dog. The Quick Brown Fox Jumps Over The Lazy Dog. The Quick Brown Fox Jumps Over The Lazy Dog.'
   }
 })
 

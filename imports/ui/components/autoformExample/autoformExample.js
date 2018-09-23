@@ -1,26 +1,24 @@
-/*jshint esversion: 6 */
+import './autoformExample.html'
+import '../DynaView'
+import SimpleSchema from 'simpl-schema'
+import Faker from 'faker'
+console.log('load insert example ui component')
 
-import './autoformExample.html';
-import '../DynaView';
-import SimpleSchema from 'simpl-schema';
-SimpleSchema.extendOptions(['autoform']); // idk why this is needed here, it is done at startup!
-import Faker from 'faker';
-
-
-console.log('load insert example ui component');
+// idk why this is needed here, it is done at startup!
+SimpleSchema.extendOptions(['autoform'])
 
 Template.autoformExample.helpers({
   doc() {
-    let text1 = Faker.lorem.sentence();
+    let text1 = Faker.lorem.sentence()
     for(let i=0; i<5; i++) {
-      text1 += ' '+Faker.lorem.sentence();
+      text1 += ' '+Faker.lorem.sentence()
     }
     return {
       text1: text1,
       text2: text1,
       select1: 'VALUE1',
       question1: 'answer1'
-    };
+    }
   },
 
   schema() {
@@ -39,7 +37,7 @@ Template.autoformExample.helpers({
                 label: 'Option 2',
                 value: 'VALUE2'
               }
-            ];
+            ]
           }
         }
       },
@@ -58,7 +56,7 @@ Template.autoformExample.helpers({
                 label: 'Option 2',
                 value: 'VALUE2'
               }
-            ];
+            ]
           }
         }
       },
@@ -89,6 +87,6 @@ Template.autoformExample.helpers({
           default: 'default text'
         }
       }
-    });
+    }, { tracker: Tracker})
   }
-});
+})

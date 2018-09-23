@@ -1,9 +1,7 @@
-/*jshint esversion: 6 */
+import SimpleSchema from 'simpl-schema'
+import { Tracker } from 'meteor/tracker'
 
-import SimpleSchema from 'simpl-schema';
-import { Tracker } from 'meteor/tracker';
-
-SimpleSchema.extendOptions(['autoform']);
+SimpleSchema.extendOptions(['autoform'])
 
 export default new SimpleSchema({
 
@@ -271,6 +269,4 @@ export default new SimpleSchema({
   'autoCompleteMultipleDefault.$': {
       type: String
   }
-
-
-}, { tracker: Tracker});
+}, { tracker: Tracker})

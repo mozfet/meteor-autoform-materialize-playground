@@ -107,7 +107,15 @@ export default new SimpleSchema({
   textAreaDefault: {
     type: String,
     autoform: {
-      default: 'This should be wrapping. Why are new line characters being ignored? The Quick Brown Fox Jumps Over The Lazy Dog. The Quick Brown Fox Jumps Over The Lazy Dog.'
+      type: 'textarea',
+      default: 'This should be wrapping.\nThe Quick Brown Fox Jumps Over The Lazy Dog. The Quick Brown Fox Jumps Over The Lazy Dog. The Quick Brown Fox Jumps Over The Lazy Dog. The Quick Brown Fox Jumps Over The Lazy Dog.'
+    }
+  },
+
+  textAreaInitialized: {
+    type: String,
+    autoform: {
+      type: 'textarea'
     }
   }
 }, { tracker: Tracker});
