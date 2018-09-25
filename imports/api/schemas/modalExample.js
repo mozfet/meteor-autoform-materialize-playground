@@ -11,7 +11,10 @@ export default new SimpleSchema({
     label: 'Pick a time',
     optional: true,
     autoform: {
-      type: 'pickatime'
+      type: 'pickatime',
+      pickerOptions: {
+        container: '#modalContainer'
+      }
     }
   },
   date: {
@@ -20,7 +23,7 @@ export default new SimpleSchema({
     label: 'Pick a date',
     autoform: {
       type: 'pickadate',
-      pickadateOptions: {
+      pickerOptions: {
         container: '#modalContainer'
       }
     }

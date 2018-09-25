@@ -14,7 +14,7 @@ Playground and reference implementation for AutoForm Materialize suite.
 
 ## Dependancies
 
-Version 4.0.3 of this package was manual smoke tested in Playground 4.0.2 and seemed to work ok, with some minor issues, using:
+Version 4.0.4 of this package was manual smoke tested in Playground 4.0.2 and seemed to work ok, with some minor issues, using:
 + OSX High Sierra 10.13.6
 + Chrome Version 62.0.3497.81 (Official Build) (64-bit)
 + Meteor 1.7.0.5
