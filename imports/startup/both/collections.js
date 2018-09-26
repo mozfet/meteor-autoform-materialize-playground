@@ -3,6 +3,7 @@
 import 'meteor/mongo';
 import exampleSchema from '/imports/api/schemas/example'
 import textSchema from '/imports/api/schemas/textExample'
+import booleanSchema from '/imports/api/schemas/booleanExample'
 import modalSchema from '/imports/api/schemas/modalExample'
 import arraysSchema from '/imports/api/schemas/arraysExample'
 import dateTimeSchema from '/imports/api/schemas/dateTimePickerExample'
@@ -32,6 +33,10 @@ Arrays.find({}).observe(observationHandler)
 Texts = new Mongo.Collection('Texts')
 Texts.attachSchema(textSchema)
 Texts.find({}).observe(observationHandler)
+
+Booleans = new Mongo.Collection('Booleans')
+Booleans.attachSchema(booleanSchema)
+Booleans.find({}).observe(observationHandler)
 
 DateTimes = new Mongo.Collection('DateTimes')
 DateTimes.attachSchema(dateTimeSchema)
