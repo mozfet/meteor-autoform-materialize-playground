@@ -59,12 +59,12 @@ momentjs:moment@2.10.6
 mongo@1.5.1
 mongo-dev-server@1.1.0
 mongo-id@1.0.7
-mozfet:autoform-materialize@4.0.6
+mozfet:autoform-materialize@4.0.7
 mozfet:autoform-materialize-files@2.1.0
-mozfet:autoform-materialize-modals@4.0.0
+mozfet:autoform-materialize-modals@4.0.1
 mozfet:autoform-materialize-nouislider@2.0.4
 mozfet:autoform-medium@2.0.5
-mozfet:materialize-icons@1.0.1
+mozfet:materialize-icons@1.0.2
 npm-mongo@3.0.11
 observe-sequence@1.0.16
 ordered-dict@1.1.0
