@@ -40,6 +40,7 @@ Booleans.find({}).observe(observationHandler)
 
 DateTimes = new Mongo.Collection('DateTimes')
 DateTimes.attachSchema(dateTimeSchema)
+DateTimes.find({}).observe(observationHandler)
 
 Files = new FilesCollection({
   collectionName: 'Files',

@@ -11,6 +11,7 @@ export default new SimpleSchema({
   date: {
     type: Date,
     label: 'Pick a date',
+    optional: true,
     autoform: {
       type: 'pickadate'
     }
