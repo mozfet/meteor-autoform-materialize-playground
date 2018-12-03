@@ -1,10 +1,8 @@
-/*jshint esversion: 6 */
+import SimpleSchema from 'simpl-schema'
+import { Tracker } from 'meteor/tracker'
+import wNumb from 'wnumb'
 
-import SimpleSchema from 'simpl-schema';
-import { Tracker } from 'meteor/tracker';
-import wNumb from 'wnumb';
-
-SimpleSchema.extendOptions(['autoform']);
+SimpleSchema.extendOptions(['autoform'])
 
 export default new SimpleSchema({
 
@@ -214,11 +212,12 @@ export default new SimpleSchema({
             label: 'Option 7',
             value: 'VALUE7'
           }
-        ];
+        ]
       }
     }
   },
   'multipleSelectWithDefaultWithFirstOptionWithOptionsFunction.$': {
     type: String
-  },
-}, { tracker: Tracker});
+  }
+
+}, { tracker: Tracker})

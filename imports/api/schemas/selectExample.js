@@ -22,7 +22,7 @@ export default new SimpleSchema({
       type: 'select'
     }
   },
-  
+
   optionalSelectWithoutDefaultWithPlacehorder: {
     type: String,
     optional: true,
@@ -62,4 +62,4 @@ export default new SimpleSchema({
       placeholder: '(Choose a thing...)'
     }
   }
-}, { tracker: Tracker});
+}, { tracker: Tracker})

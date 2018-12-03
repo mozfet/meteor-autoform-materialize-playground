@@ -62,7 +62,7 @@ mongo@1.6.0
 mongo-decimal@0.1.0
 mongo-dev-server@1.1.0
 mongo-id@1.0.7
-mozfet:autoform-materialize@4.0.10
+mozfet:autoform-materialize@4.0.12
 mozfet:autoform-materialize-files@2.1.0
 mozfet:autoform-materialize-modals@4.0.3
 mozfet:autoform-materialize-nouislider@2.0.4

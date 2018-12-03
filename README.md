@@ -14,15 +14,16 @@ Playground and reference implementation for AutoForm Materialize suite.
 
 ## Dependancies
 
-Version 4.0.6 of this demo app was manual smoke tested with:
+Version 4.0.8 of this demo app was manual smoke tested with:
 + OSX High Sierra 10.13.6
 + Chrome Version 62.0.3497.81 (Official Build) (64-bit)
-+ Meteor 1.7.0.5
++ Meteor 1.8
 + Simple Schema 0.5 (NPM Package)
-+ Materialize CSS 1.0.0-rc2 (NPM Package)
++ Materialize CSS 1.0.0 (NPM Package)
 + Hammerjs 2.0.8 (NPM Package)
 + Aldeed Autoform 6.3.0 (Atmosphere Package)
 + Aldeed Collection2 2.1.2 (Atmosphere Package)
++ Mozfet Autoform Materialize 4.0.12 (Atmosphere Package)
 + Mozfet Autoform Materialize Modals 1.1.5 (Atmosphere Package)
 + Mozfet Autoform Materialize Files 2.1.0 (Atmosphere Package)
 + Mozfet Autoform Medium 2.0.4 (Atmosphere Package)
