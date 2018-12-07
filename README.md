@@ -14,7 +14,7 @@ Playground and reference implementation for AutoForm Materialize suite.
 
 ## Dependancies
 
-Version 4.0.9 of this demo app was manual smoke tested with:
+Version 5.0.0 of this demo app was manual smoke tested with:
 + macOS Majave v10.14.1
 + Chrome v62.0.3497.81 (Official Build) (64-bit)
 + Meteor v1.8.1
