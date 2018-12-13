@@ -1,3 +1,4 @@
+// imports
 import { Template } from 'meteor/templating'
 import '../components/insertExample/insertExample'
 import '../components/autoformExample/autoformExample'
@@ -10,5 +11,6 @@ import '../components/autoCompleteExample/autoCompleteExample'
 import '../components/arraysExample/arraysExample'
 import '../components/dateTimePickerExample/dateTimePickerExample'
 import '../components/selectCheckboxExample/selectCheckboxExample'
+import '../components/slidersExample/slidersExample'
 import '../components/DynaView'
 import './index.html'

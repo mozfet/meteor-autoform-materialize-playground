@@ -1,0 +1,27 @@
+<template name="slidersExample">
+  <h2>Sliders Quickform</h2>
+  {{> quickForm id="slidersExample" type="normal" doc=doc schema=schema}}
+
+  <h2>Sliders Autoform</h2>
+  <h3>Overwrite 1</h3>
+  {{#autoForm id="slidersAutoFormExample1" type="normal" doc=doc schema=schema}}
+    {{> afQuickField name="basic" min=2 max=50 label="Overwritten Min and Max"}}
+    <button type="submit" class="btn btn-primary">Submit</button>
+  {{/autoForm}}
+  <h3>Overwrite 2</h3>
+  {{#autoForm id="slidersAutoFormExample2" type="normal" doc=doc schema=schema}}
+    {{> afQuickField name="basic" range='{"min":0, "max":100}'
+        label="Overwritten range"}}
+    <button type="submit" class="btn btn-primary">Submit</button>
+  {{/autoForm}}
+  <h3>Overwrite 3</h3>
+  {{#autoForm id="slidersAutoFormExample3" type="normal" doc=doc schema=schema}}
+    {{> afQuickField name="basic" start=20 label="Overwritten Start"}}
+    <button type="submit" class="btn btn-primary">Submit</button>
+  {{/autoForm}}
+  <h3>Overwrite 4</h3>
+  {{#autoForm id="slidersAutoFormExample4" type="normal" doc=doc schema=schema}}
+    {{> afQuickField name="rangeArrayPips" start='[100,3000]' label="Overwritten Start"}}
+    <button type="submit" class="btn btn-primary">Submit</button>
+  {{/autoForm}}
+</template>
