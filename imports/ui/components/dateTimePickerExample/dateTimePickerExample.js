@@ -8,8 +8,9 @@ Template.dateTimePickerExample.helpers({
       id:'dateTimePickerExample',
       type: 'insert',
       doc: {
-        dateInitialised: new Date(),
-        timeInitialised: '12:34 PM'
+        dateInitialized: new Date(),
+        dateStringInitialized: '2017-03-17',
+        timeInitialized: '15:34'
       }
     }
   }

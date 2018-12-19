@@ -23,7 +23,7 @@ Version 5.1.0 of this demo app was manual smoke tested with:
 + Hammerjs v2.0.8 (NPM Package)
 + Aldeed Autoform v6.3.0 (Atmosphere Package)
 + Aldeed Collection2 v2.1.2 (Atmosphere Package)
-+ Mozfet Autoform Materialize v4.0.12 (Atmosphere Package)
++ Mozfet Autoform Materialize v5.0.0 (Atmosphere Package)
 + Mozfet Autoform Materialize Modals v4.0.2 (Atmosphere Package)
 + Mozfet Autoform Materialize Files v2.1.0 (Atmosphere Package)
 + Mozfet Autoform Materialize noUiSlider v3.0.0 (Atmosphere Package)

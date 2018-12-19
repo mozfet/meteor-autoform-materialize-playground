@@ -17,9 +17,25 @@ export default new SimpleSchema({
     }
   },
 
-  dateInitialised: {
+  stringDate: {
+    type: String,
+    optional: true,
+    autoform: {
+      type: 'pickadate'
+    }
+  },
+
+  dateInitialized: {
     type: Date,
-    label: 'Pick a date with initail value',
+    label: 'Pick a date with initial value',
+    autoform: {
+      type: 'pickadate'
+    }
+  },
+
+  dateStringInitialized: {
+    type: String,
+    label: 'Pick a date string with initial value',
     autoform: {
       type: 'pickadate'
     }
@@ -43,7 +59,7 @@ export default new SimpleSchema({
     }
   },
 
-  timeInitialised: {
+  timeInitialized: {
     type: String,
     label: 'Pick a time with initial value',
     autoform: {
