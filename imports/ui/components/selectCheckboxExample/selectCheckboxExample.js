@@ -20,6 +20,17 @@ const schema = new SimpleSchema({
     allowedValues: ['Something', 'Another Thing']
   },
 
+  selectCheckboxInline: {
+    type: Array,
+    autoform: {
+      type: 'select-checkbox-inline'
+    }
+  },
+  'selectCheckboxInline.$': {
+    type: String,
+    allowedValues: ['Something', 'Another Thing', 'The only', 'thing we do', 'is go', 'blah', 'blahh', 'blahhh']
+  },
+
   selectCheckboxMinMax: {
     type: Array,
     minCount: 1,
