@@ -50,7 +50,7 @@ const schema = new SimpleSchema({
   'formattedTooltips': {
     type: String,
     optional: true,
-    label: 'Formatted tooltip (meteor-autoform-nouislider is recommended for large tooltip texts)',
+    label: 'Formatted tooltip (meteor-autoform-nouislider2 is recommended for large tooltip texts)',
     autoform: {
       type: 'noUiSlider2',
       // labelLeft: 'LeftLabel',
