@@ -1,12 +1,9 @@
-/*jshint esversion: 6 */
+// imports
+import './insertExample.html'
 
-import './insertExample.html';
-import '../DynaView';
-
-console.log('load insert example ui component');
-
+// helpers
 Template.insertExample.helpers({
-  data() {
+  formData() {
     return {
       collection: 'Examples',
       id:'insertExample',
@@ -18,6 +15,6 @@ Template.insertExample.helpers({
         simpleSwitchInitialised: true,
         customSwitchInitialised: 'TRUE_VALUE'
       }
-    };
+    }
   }
-});
+})

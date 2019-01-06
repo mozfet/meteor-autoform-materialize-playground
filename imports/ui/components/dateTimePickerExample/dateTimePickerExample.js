@@ -1,5 +1,4 @@
 import './dateTimePickerExample.html'
-import '../DynaView'
 
 Template.dateTimePickerExample.helpers({
   data() {

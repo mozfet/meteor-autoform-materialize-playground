@@ -1,5 +1,5 @@
 // imports
-import { Template } from 'meteor/templating'
+import 'meteor/mozfet:dynaview'
 import '../components/insertExample/insertExample'
 import '../components/autoformExample/autoformExample'
 import '../components/modalExample/modalExample'
@@ -13,5 +13,5 @@ import '../components/dateTimePickerExample/dateTimePickerExample'
 import '../components/selectCheckboxExample/selectCheckboxExample'
 import '../components/selectRadioExample/selectRadioExample'
 import '../components/slidersExample/slidersExample'
-import '../components/DynaView'
+import '../components/reactiveExample/reactiveExample'
 import './index.html'

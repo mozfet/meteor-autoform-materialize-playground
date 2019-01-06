@@ -11,7 +11,7 @@ export default new SimpleSchema({
     optional: true,
     allowedValues: ['Something', 'Another Thing'],
     autoform: {
-      type: 'select'
+      type: 'select'      
     }
   },
 
@@ -19,7 +19,8 @@ export default new SimpleSchema({
     type: String,
     allowedValues: ['Something', 'Another Thing'],
     autoform: {
-      type: 'select'
+      type: 'select',
+      options: 'allowed'
     }
   },
 

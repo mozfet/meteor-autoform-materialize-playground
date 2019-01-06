@@ -1,7 +1,7 @@
+// imports
 import { Tracker } from 'meteor/tracker'
 import SimpleSchema from 'simpl-schema'
 import {AutoForm} from 'meteor/aldeed:autoform'
-import '../DynaView'
 import './selectCheckboxExample.html'
 
 // extend simple schema options

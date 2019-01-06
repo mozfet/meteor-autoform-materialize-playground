@@ -1,0 +1,20 @@
+<template name="reactiveExample">
+  <h2>Reactive Options</h2>
+  <p>
+    According to <a href="https://github.com/aldeed/meteor-autoform">
+    AutoForm docs</a> there is no defined way to make options on a quickForm
+    reactive and thus a custom autoForm is needed for reactive selects.
+  </p>
+  <p>
+    <button class="btn js-increment-counter">Reactive Counter {{cnt}}</button>
+    {{#each option in reactiveVarSelectOptions}}
+      {{option.label}}&nbsp;
+    {{/each}}
+  </p>
+
+  <h3>AutoForm Reactive Example</h3>
+  {{#autoForm id="reactiveExample" type="normal" doc=doc schema=schema}}
+    {{> afQuickField name='reactiveVarSelectOptions' options=reactiveVarSelectOptions}}
+    <button type="submit" class="btn">Submit</button>
+  {{/autoForm}}
+</template>

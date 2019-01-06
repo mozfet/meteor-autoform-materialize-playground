@@ -1,5 +1,4 @@
 import './autoformExample.html'
-import '../DynaView'
 import SimpleSchema from 'simpl-schema'
 import Faker from 'faker'
 console.log('load insert example ui component')
