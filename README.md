@@ -14,7 +14,7 @@ Playground and reference implementation for AutoForm Materialize suite.
 
 ## Compatability
 
-Version 5.1.5 of this demo app was manual smoke tested with:
+Version 5.1.6 of this demo app was manual smoke tested with:
 + macOS Majave v10.14.1
 + Chrome v62.0.3497.81 (Official Build) (64-bit)
 + Meteor v1.8.1
@@ -23,7 +23,7 @@ Version 5.1.5 of this demo app was manual smoke tested with:
 + Hammerjs v2.0.8 (NPM Package)
 + Aldeed Autoform v6.3.0 (Atmosphere Package)
 + Aldeed Collection2 v2.1.2 (Atmosphere Package)
-+ Mozfet Autoform Materialize v5.0.2 (Atmosphere Package)
++ Mozfet Autoform Materialize v5.0.3 (Atmosphere Package)
 + Mozfet Autoform Materialize Modals v4.0.2 (Atmosphere Package)
 + Mozfet Autoform Materialize Files v2.1.0 (Atmosphere Package)
 + Mozfet Autoform Materialize noUiSlider v3.0.1 (Atmosphere Package)
