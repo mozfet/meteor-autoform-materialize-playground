@@ -26,7 +26,7 @@ Template.reactiveExample.onCreated(() => {
     console.log('cnt ', cnt)
     let reactiveVarSelectOptions = []
     for (let i=0; i<cnt; i++) {
-      reactiveVarSelectOptions.push({label: `${i}`, value: i})
+      reactiveVarSelectOptions.push({label: `${i}`, value: i.toString()})
     }
     console.log('reactiveVarSelectOptions ', reactiveVarSelectOptions)
     instance.state.reactiveVarSelectOptions.set(reactiveVarSelectOptions)
@@ -47,11 +47,22 @@ Template.reactiveExample.helpers({
     const instance = Template.instance()
     return new SimpleSchema({
       'reactiveVarSelectOptions': {
-        type: Number,
+        type: String,
         optional: true,
         autoform: {
           type: 'select'
         }
+      },
+      'reactiveVarSelectMultipleOptions': {
+        type: Array,
+        optional: true,
+        autoform: {
+          type: 'select-multiple',
+          firstOption: '(Choose some)'
+        }
+      },
+      'reactiveVarSelectMultipleOptions.$': {
+        type: String
       }
     }, {tracker: Tracker})
   },

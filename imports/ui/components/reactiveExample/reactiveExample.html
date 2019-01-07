@@ -14,7 +14,10 @@
 
   <h3>AutoForm Reactive Example</h3>
   {{#autoForm id="reactiveExample" type="normal" doc=doc schema=schema}}
-    {{> afQuickField name='reactiveVarSelectOptions' options=reactiveVarSelectOptions}}
+    {{> afQuickField name='reactiveVarSelectOptions'
+        options=reactiveVarSelectOptions}}
+    {{> afQuickField name='reactiveVarSelectMultipleOptions'
+        options=reactiveVarSelectOptions}}
     <button type="submit" class="btn">Submit</button>
   {{/autoForm}}
 </template>
