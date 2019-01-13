@@ -5,7 +5,7 @@ var chalk = require('chalk');
 shell.config.fatal = true;
 
 // define project name
-var project_name = 'butterfly-diary';
+var project_name = 'meteor-autoform-materialize-playground';
 
 // define project folder
 var dir_projects = '~/projects';

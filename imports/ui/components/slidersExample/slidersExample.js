@@ -17,7 +17,7 @@ const schema = new SimpleSchema({
     min: 10,
     max: 26,
     autoform: {
-      type: 'noUiSlider2'
+      type: 'noUiSlider'
     }
   },
 
@@ -25,7 +25,7 @@ const schema = new SimpleSchema({
     type: Array,
     optional: true,
     autoform: {
-      type: 'noUiSlider2',
+      type: 'noUiSlider',
       step: 2,
       noUiSliderOptions: {
         start: [700,8000],
@@ -52,7 +52,7 @@ const schema = new SimpleSchema({
     optional: true,
     label: 'Formatted tooltip (meteor-autoform-nouislider2 is recommended for large tooltip texts)',
     autoform: {
-      type: 'noUiSlider2',
+      type: 'noUiSlider',
       // labelLeft: 'LeftLabel',
       // labelRight: 'RightLabel',
       noUiSliderOptions: {
