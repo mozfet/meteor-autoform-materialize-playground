@@ -26,11 +26,12 @@ zodiase:material-design-icons-fonts
 
 ostrio:files@1.10.2
 
-mozfet:dynaview@0.0.5
+mozfet:dynaview@0.0.6
 mozfet:autoform-materialize@5.0.2
 mozfet:autoform-materialize-modals@4.0.2
 mozfet:autoform-materialize-files@2.1.0
 mozfet:autoform-medium@2.0.4
-# mozfet:autoform-materialize-nouislider@3.0.1
-mozfet:autoform-materialize-nouislider2@1.0.1
-crystalhelix:wnumb@1.0.1
+mozfet:autoform-materialize-nouislider@3.0.1
+mozfet:autoform-materialize-nouislider2@1.1.0
+
+# crystalhelix:wnumb@1.0.1

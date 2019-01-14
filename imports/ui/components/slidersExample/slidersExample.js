@@ -4,6 +4,7 @@ import { Template } from 'meteor/templating'
 import { Tracker } from 'meteor/tracker'
 import SimpleSchema from 'simpl-schema'
 import moment from 'moment'
+import wNumb from 'wnumb'
 import 'moment-duration-format'
 import './slidersExample.html'
 
@@ -17,7 +18,22 @@ const schema = new SimpleSchema({
     min: 10,
     max: 26,
     autoform: {
-      type: 'noUiSlider'
+      type: 'noUiSlider',
+      noUiSliderOptions: {
+        tooltips: false,
+        format: wNumb({
+            decimals: 0
+        }),
+      }
+    }
+  },
+
+  'basic2': {
+    type: Number,
+    min: 10,
+    max: 26,
+    autoform: {
+      type: 'noUiSlider2'
     }
   },
 
@@ -47,12 +63,53 @@ const schema = new SimpleSchema({
     type: Number
   },
 
+  'rangeArrayPips2': {
+    type: Array,
+    optional: true,
+    autoform: {
+      type: 'noUiSlider2',
+      step: 2,
+      noUiSliderOptions: {
+        start: [700,8000],
+        connect: true,
+        range: {
+          'min': [0],
+        	'10%': [500,500],
+        	'50%': [4000,1000],
+        	'max': [10000]
+        },
+        pips: {
+          mode: 'range',
+          density: 3
+        }
+      }
+    }
+  },
+  'rangeArrayPips2.$': {
+    type: Number
+  },
+
+  'tooltips': {
+    type: Number,
+    min: 10,
+    max: 26,
+    autoform: {
+      type: 'noUiSlider',
+      noUiSliderOptions: {
+        tooltips: true,
+        format: wNumb({
+            decimals: 0
+        }),
+      }
+    }
+  },
+
   'formattedTooltips': {
     type: String,
     optional: true,
-    label: 'Formatted tooltip (meteor-autoform-nouislider2 is recommended for large tooltip texts)',
+    label: 'Large tooltip with custom formatting',
     autoform: {
-      type: 'noUiSlider',
+      type: 'noUiSlider2',
       // labelLeft: 'LeftLabel',
       // labelRight: 'RightLabel',
       noUiSliderOptions: {
