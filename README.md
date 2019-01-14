@@ -14,8 +14,8 @@ Playground and reference implementation for AutoForm Materialize suite.
 
 ## Compatability
 
-Version 5.1.6 of this demo app was manual smoke tested with:
-+ macOS Majave v10.14.1
+Version 5.2.0 of this demo app was manual smoke tested with:
++ macOS Mojave v10.14.1
 + Chrome v62.0.3497.81 (Official Build) (64-bit)
 + Meteor v1.8.1
 + Simple Schema v1.4.3 (NPM Package)
@@ -27,12 +27,12 @@ Version 5.1.6 of this demo app was manual smoke tested with:
 + Mozfet Autoform Materialize Modals v4.0.2 (Atmosphere Package)
 + Mozfet Autoform Materialize Files v2.1.0 (Atmosphere Package)
 + Mozfet Autoform Materialize noUiSlider v3.0.1 (Atmosphere Package)
-+ Mozfet Autoform Materialize noUiSlider2 v1.0.1 (Atmosphere Package)
++ Mozfet Autoform Materialize noUiSlider2 v1.1.0 (Atmosphere Package)
 + Mozfet Autoform Medium v2.0.4 (Atmosphere Package)
 + Mozfet Material Icons v1.1.0 (Atmosphere Package)
 + Ostrio Files 1.10.2 (Atmosphere Package)
 + FourSeven SCSS 4.9.0 (Atmosphere Package)
-+ Wnumb 1.1.0 (GIT Repo)
++ wNumb 1.1.0 (NPM Package)
 + Material Design Icons Fonts 3.0.1 (Atmosphere)
 
 ## Installation
