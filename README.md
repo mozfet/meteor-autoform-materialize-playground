@@ -12,7 +12,7 @@ Playground and reference implementation for AutoForm Materialize suite.
 [mozfet:meteor-autoform-medium](https://github.com/mozfet/meteor-autoform-medium)
 [mozfet:meteor-autoform-materialize-playground](https://github.com/mozfet/meteor-autoform-materialize-playground)
 
-## Compatability
+## Compatibility
 
 Version 5.2.0 of this demo app was manual smoke tested with:
 + macOS Mojave v10.14.1

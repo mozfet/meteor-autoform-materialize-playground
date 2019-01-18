@@ -20,9 +20,9 @@ const schema = new SimpleSchema({
     autoform: {
       type: 'noUiSlider',
       noUiSliderOptions: {
-        tooltips: false,
+        // tooltips: false,
         format: wNumb({
-            decimals: 0
+          decimals: 0
         }),
       }
     }
