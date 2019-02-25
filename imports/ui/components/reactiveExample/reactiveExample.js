@@ -63,7 +63,11 @@ Template.reactiveExample.helpers({
       },
       'reactiveVarSelectMultipleOptions.$': {
         type: String
-      }
+      },
+      reactiveText: {
+        type: String,
+        optional: true
+      },
     }, {tracker: Tracker})
   },
   cnt() {
